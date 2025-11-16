@@ -1,4 +1,4 @@
-# 🚌 Mo Bus / Ama Bus MCP Server
+# 🚌 Mo Bus / Ama Bus MCP Server (unofficial)
 
 <div align="center">
   <a href="https://github.com/HimanshuMohanty-Git24/MoBusMCP">
@@ -837,3 +837,4 @@ Made with ❤️ for Mo Bus commuters in Odisha
 ---
 
 </div>
+
