@@ -784,22 +784,6 @@ By using this MCP server, you acknowledge and accept:
 - **OpenStreetMap** — Free mapping data and Nominatim service
 - **SerpAPI** — For Google Maps geocoding integration
 - **Haversine Formula** — For accurate distance calculations
-
-### Contributors
-
-A special thank you to all:
-- 👨‍💻 **Code contributors** — Improving the codebase
-- 📊 **Data contributors** — Verifying and updating route information
-- 🐛 **Bug reporters** — Helping us identify and fix issues
-- 💡 **Suggestion makers** — Improving features and UX
-- 📖 **Documentation improvers** — Making guides clearer
-
-### Community
-
-- All the **Mo Bus commuters** using and testing this tool
-- Everyone who **shared feedback** and suggestions
-- The **Odisha tech community** for encouragement
-
 ---
 
 <div align="center">
