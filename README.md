@@ -406,6 +406,27 @@ Claude will provide structured responses with:
 
 ---
 
+## 📸 Screenshots of Demo
+
+### Live Demo of the MCP in Action in Claude Desktop
+
+#### 1. Initial Query and Route Planning
+<div align="center">
+  <img src="./asset/1.png" alt="MCP Demo Screenshot 1 - Route Planning" width="800">
+</div>
+
+#### 2. Journey Details and Stop Information
+<div align="center">
+  <img src="./asset/2.png" alt="MCP Demo Screenshot 2 - Journey Details" width="800">
+</div>
+
+#### 3. Complete Commute Plan with Costs
+<div align="center">
+  <img src="./asset/3.png" alt="MCP Demo Screenshot 3 - Complete Plan" width="800">
+</div>
+
+---
+
 ## ⚙️ Configuration
 
 ### SerpAPI Setup (Optional but Recommended)
