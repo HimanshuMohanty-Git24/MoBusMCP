@@ -427,6 +427,22 @@ Claude will provide structured responses with:
 
 ---
 
+## 📹 Video Demo
+
+### Full Demo on YouTube
+
+Watch the complete demonstration of Mo Bus MCP Server in action:
+
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=5amNjx5qDVE" target="_blank">
+    <img src="https://img.youtube.com/vi/5amNjx5qDVE/maxresdefault.jpg" alt="Mo Bus MCP Server - YouTube Demo" width="800" style="cursor: pointer; border-radius: 8px;">
+  </a>
+  
+  **[Watch Full Demo on YouTube](https://www.youtube.com/watch?v=5amNjx5qDVE)**
+</div>
+
+---
+
 ## ⚙️ Configuration
 
 ### SerpAPI Setup (Optional but Recommended)
