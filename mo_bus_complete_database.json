@@ -1,0 +1,5128 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "last_updated": "2025-11-16T00:20:00+05:30",
+    "system_name": "Mo Bus - Odisha Public Transportation System",
+    "operator": "Capital Region Urban Transport (CRUT)",
+    "website": "https://www.capitalregiontransport.in/",
+    "total_routes": 84,
+    "total_stops": 1050,
+    "cities_covered": [
+      "Bhubaneswar",
+      "Cuttack",
+      "Puri",
+      "Khordha",
+      "Konark",
+      "Jatani",
+      "Niali",
+      "Salepur",
+      "Kakatpur",
+      "Tangi",
+      "Delanga",
+      "Nimapada",
+      "Charbatia",
+      "Dhabaleswar",
+      "Chandaka",
+      "Barang",
+      "Balakati",
+      "Odagaon"
+    ]
+  },
+
+  "fare_structure": {
+    "base_fare": 5,
+    "currency": "INR",
+    "per_stop_charge": 2,
+    "distance_slabs": [
+      { "min_km": 0, "max_km": 5, "fare": 5 },
+      { "min_km": 5, "max_km": 10, "fare": 10 },
+      { "min_km": 10, "max_km": 20, "fare": 15 },
+      { "min_km": 20, "max_km": 30, "fare": 20 },
+      { "min_km": 30, "max_km": 50, "fare": 30 },
+      { "min_km": 50, "max_km": 100, "fare": 40 }
+    ],
+    "max_fare": 50,
+    "discounts": {
+      "student": { "percentage": 50, "id_required": true },
+      "senior_citizen": { "percentage": 50, "age_limit": 60 },
+      "pwd": { "percentage": 100, "id_required": true }
+    },
+    "payment_methods": ["Cash", "UPI", "Card", "Mo Bus Card"]
+  },
+
+  "stops": {
+    "abit": { "name": "ABIT", "city": "Cuttack", "type": "educational" },
+    "ablaze_homez": {
+      "name": "Ablaze Homez",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "acharya_vihar_square": {
+      "name": "Acharya Vihar Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "adaspur_bus_stand": {
+      "name": "Adaspur Bus Stand",
+      "city": "Adaspur",
+      "type": "terminal"
+    },
+    "adaspur_hospital": {
+      "name": "Adaspur Hospital",
+      "city": "Adaspur",
+      "type": "hospital"
+    },
+    "aditya_hyundai_tamando": {
+      "name": "Aditya Hyundai Tamando",
+      "city": "Bhubaneswar",
+      "type": "commercial"
+    },
+    "ag_square": {
+      "name": "AG Square",
+      "city": "Bhubaneswar",
+      "type": "major",
+      "coordinates": { "lat": 20.2735, "lon": 85.84 }
+    },
+    "ag_square_bbsr_club": {
+      "name": "AG Square (near Bhubaneswar Club)",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "agrahat": { "name": "Agrahat", "city": "Charbatia", "type": "village" },
+    "agriculture_directorate": {
+      "name": "Agriculture Directorate",
+      "city": "Bhubaneswar",
+      "type": "government"
+    },
+    "aiginia": {
+      "name": "Aiginia",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "aiims_bhubaneswar": {
+      "name": "AIIMS Bhubaneswar",
+      "city": "Bhubaneswar",
+      "type": "hospital",
+      "coordinates": { "lat": 20.313, "lon": 85.8102 },
+      "landmark": true
+    },
+    "airport": {
+      "name": "Biju Patnaik International Airport",
+      "city": "Bhubaneswar",
+      "type": "airport",
+      "coordinates": { "lat": 20.2444, "lon": 85.8178 }
+    },
+    "alarpur": { "name": "Alarpur", "city": "Cuttack", "type": "village" },
+    "alu_godam": {
+      "name": "Alu Godam",
+      "city": "Bhubaneswar",
+      "type": "market"
+    },
+    "amrita_vidyalayam": {
+      "name": "Amrita Vidyalayam",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "ananda_bazar": {
+      "name": "Ananda Bazar",
+      "city": "Konark",
+      "type": "market"
+    },
+    "anantabalia_nursery": {
+      "name": "Anantabalia Nursery",
+      "city": "Cuttack",
+      "type": "agricultural"
+    },
+    "apex_college": {
+      "name": "Apex College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "apollo_hospital": {
+      "name": "Apollo Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "apuja": { "name": "Apuja", "city": "Niali", "type": "village" },
+    "archhili": { "name": "Archhili", "city": "Cuttack", "type": "village" },
+    "argul": { "name": "Argul", "city": "Khordha", "type": "village" },
+    "arundoya_market": {
+      "name": "Arundoya Market",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "ashok_nagar": {
+      "name": "Ashok Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential",
+      "coordinates": { "lat": 20.2695, "lon": 85.8385 }
+    },
+    "asijanga": { "name": "Asijanga", "city": "Konark", "type": "village" },
+    "athanga": { "name": "Athanga", "city": "Cuttack", "type": "village" },
+    "athara_nala": {
+      "name": "Athara Nala",
+      "city": "Puri",
+      "type": "landmark"
+    },
+    "ayurveda_college": {
+      "name": "Ayurveda College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "badambadi_bus_stand": {
+      "name": "Badambadi Bus Stand",
+      "city": "Cuttack",
+      "type": "terminal"
+    },
+    "badambadi_square": {
+      "name": "Badambadi Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "badhai_chaka": {
+      "name": "Badhai Chaka",
+      "city": "Konark",
+      "type": "junction"
+    },
+    "bagachi_sri_shankara_hospital": {
+      "name": "Bagchi Sri Shankara Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "bagalpur_panchyat": {
+      "name": "Bagalpur Panchayat Office",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "bahugram": { "name": "Bahugram", "city": "Salepur", "type": "village" },
+    "bahabalpur": {
+      "name": "Bahabalpur",
+      "city": "Salepur",
+      "type": "village"
+    },
+    "baimundi_nagar": {
+      "name": "Baimundi Nagar",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "bajrakabati": { "name": "Bajrakabati", "city": "Cuttack", "type": "area" },
+    "balaji_hospital": {
+      "name": "Balaji Hospital",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "balakati": { "name": "Balakati", "city": "Puri", "type": "town" },
+    "balanga": { "name": "Balanga", "city": "Puri", "type": "village" },
+    "balapur": { "name": "Balapur", "city": "Puri", "type": "village" },
+    "balara": { "name": "Balara", "city": "Kakatpur", "type": "village" },
+    "baleswar": { "name": "Baleswar", "city": "Odisha", "type": "city" },
+    "bali_guhali": { "name": "Bali Guhali", "city": "Puri", "type": "area" },
+    "bali_kapileswar": {
+      "name": "Bali Kapileswar",
+      "city": "Puri",
+      "type": "religious"
+    },
+    "bali_sahi": {
+      "name": "Bali Sahi (multiple locations)",
+      "city": "Various",
+      "type": "area"
+    },
+    "bali_sahi_uttara": {
+      "name": "Bali Sahi",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "balidokan": { "name": "Balidokan", "city": "Kakatpur", "type": "village" },
+    "baligaon": { "name": "Baligaon", "city": "Puri", "type": "village" },
+    "balighai": { "name": "Balighai", "city": "Puri", "type": "beach" },
+    "balighat": { "name": "Balighat", "city": "Puri", "type": "area" },
+    "balikuda": { "name": "Balikuda", "city": "Bhubaneswar", "type": "area" },
+    "baliyatra_ground": {
+      "name": "Baliyatra Ground",
+      "city": "Cuttack",
+      "type": "landmark"
+    },
+    "balisahi_salepur": {
+      "name": "Balisahi",
+      "city": "Salepur",
+      "type": "area"
+    },
+    "balugaon": { "name": "Balugaon", "city": "Khordha", "type": "town" },
+    "bamphakuda": {
+      "name": "Bamphakuda",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "bank_chaka_niali": {
+      "name": "Bank Chaka Niali",
+      "city": "Niali",
+      "type": "junction"
+    },
+    "bank_colony_puri": {
+      "name": "Bank Colony",
+      "city": "Puri",
+      "type": "residential"
+    },
+    "bank_sqr_mahanadi_vihar": {
+      "name": "Bank Square, Mahanadi Vihar",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "barabati_stadium": {
+      "name": "Barabati Stadium",
+      "city": "Cuttack",
+      "type": "sports",
+      "landmark": true
+    },
+    "barahipur": { "name": "Barahipur", "city": "Adaspur", "type": "village" },
+    "baramunda_bsabt": {
+      "name": "Baramunda BSABT",
+      "city": "Bhubaneswar",
+      "type": "terminal",
+      "coordinates": { "lat": 20.2961, "lon": 85.8245 },
+      "major_hub": true
+    },
+    "barang": { "name": "Barang", "city": "Cuttack", "type": "town" },
+    "barang_police_station": {
+      "name": "Barang Police Station",
+      "city": "Cuttack",
+      "type": "police_station"
+    },
+    "barang_sitaram_bazar": {
+      "name": "Barang Sitaram Bazar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "barang_square": {
+      "name": "Barang Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "baral": { "name": "Baral", "city": "Cuttack", "type": "village" },
+    "baral_laxminarayan_temple": {
+      "name": "Baral Laxminarayan Temple",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "barunei_hill": {
+      "name": "Barunei Hill",
+      "city": "Khordha",
+      "type": "landmark"
+    },
+    "barunei_pitha": {
+      "name": "Barunei Pitha",
+      "city": "Khordha",
+      "type": "area"
+    },
+    "bata_gaon": { "name": "Bata Gaon", "city": "Puri", "type": "village" },
+    "bata_mangala_temple": {
+      "name": "Bata Mangala Temple",
+      "city": "Puri",
+      "type": "religious"
+    },
+    "bateswar_mahadev_temple": {
+      "name": "Bateswar Mahadev Temple",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "bbsr_bypass": {
+      "name": "Bhubaneswar Bypass",
+      "city": "Puri",
+      "type": "highway"
+    },
+    "bdo_office_cuttack": {
+      "name": "BDO Office Cuttack Sadar",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "bedi_hanuman": {
+      "name": "Bedi Hanuman",
+      "city": "Puri",
+      "type": "religious"
+    },
+    "begunia": { "name": "Begunia", "city": "Konark", "type": "village" },
+    "beladala": { "name": "Beladala", "city": "Puri", "type": "village" },
+    "bentakar": { "name": "Bentakar", "city": "Cuttack", "type": "village" },
+    "berhampur_cuttack": {
+      "name": "Berhampur",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "bhabani_nagar_phase_2": {
+      "name": "Bhabani Nagar Phase-II",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "bhairpur": { "name": "Bhairpur", "city": "Salepur", "type": "village" },
+    "bhalunka_road": {
+      "name": "Bhalunka Road",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "bhanpur": { "name": "Bhanpur", "city": "Bhubaneswar", "type": "area" },
+    "bharat_masala": {
+      "name": "Bharat Masala",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "bhatapada": { "name": "Bhatapada", "city": "Salepur", "type": "village" },
+    "bhibatangi": {
+      "name": "Bhimatangi",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "bhola_square_asbm": {
+      "name": "Bhola Square - ASBM",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "bholanath_vidyapith": {
+      "name": "Bholanath Vidyapith",
+      "city": "Puri",
+      "type": "educational"
+    },
+    "bhubaneswar_club": {
+      "name": "Bhubaneswar Club",
+      "city": "Bhubaneswar",
+      "type": "club"
+    },
+    "bhubaneswar_railway_station": {
+      "name": "Bhubaneswar Railway Station",
+      "city": "Bhubaneswar",
+      "type": "railway_station",
+      "coordinates": { "lat": 20.2673, "lon": 85.8393 },
+      "landmark": true
+    },
+    "bidanasi": { "name": "Bidanasi", "city": "Cuttack", "type": "area" },
+    "bidyadharpur": {
+      "name": "Bidyadharpur",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "bidyadharpur_ganesh_bazar": {
+      "name": "Ganesh Bazar, Bidyadharpur",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "bijipur": { "name": "Bijipur", "city": "Bhubaneswar", "type": "area" },
+    "biju_patnaik_park_cuttack": {
+      "name": "Biju Patnaik Park, Cuttack",
+      "city": "Cuttack",
+      "type": "park"
+    },
+    "bindusagar": {
+      "name": "Bindusagar",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "birabhadra_pur": {
+      "name": "Birabhadrapur",
+      "city": "Puri",
+      "type": "village"
+    },
+    "biragobinda_pur": {
+      "name": "Biragobinda Pur",
+      "city": "Puri",
+      "type": "village"
+    },
+    "biraharekrushnapur": {
+      "name": "Biraharekrushnapur",
+      "city": "Puri",
+      "type": "village"
+    },
+    "birapratap_pur": {
+      "name": "Birapratap Pur",
+      "city": "Puri",
+      "type": "village"
+    },
+    "biribati": { "name": "Biribati", "city": "Cuttack", "type": "village" },
+    "birupa_anicut": {
+      "name": "Birupa Anicut",
+      "city": "Cuttack",
+      "type": "landmark"
+    },
+    "birupa_vihar_sq": {
+      "name": "Birupa Vihar Square",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "bjb_college": {
+      "name": "BJB College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "block_chaka_kakatpur": {
+      "name": "Block Chaka",
+      "city": "Kakatpur",
+      "type": "junction"
+    },
+    "bnr_hotel": { "name": "BNR Hotel", "city": "Puri", "type": "commercial" },
+    "bomikhal": {
+      "name": "Bomikhal",
+      "city": "Bhubaneswar",
+      "type": "industrial"
+    },
+    "bose_college": {
+      "name": "Bose College",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "brahmanasahi": {
+      "name": "Brahmanasahi",
+      "city": "Puri",
+      "type": "village"
+    },
+    "brahmani_jharilo": {
+      "name": "Brahmani Jharilo",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "brahmeswara_temple": {
+      "name": "Brahmeswara Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "brahmeswarpatna": {
+      "name": "Brahmeswarpatna",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "c_p_s_puri": {
+      "name": "C.P.S Puri",
+      "city": "Puri",
+      "type": "government"
+    },
+    "cantonment_road": {
+      "name": "Cantonment Road",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "capital_hospital": {
+      "name": "Capital Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "care_hospital": {
+      "name": "Care Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "cda_6_park": { "name": "CDA 6 Park", "city": "Cuttack", "type": "park" },
+    "cda_9_market_square": {
+      "name": "CDA 9 Market Square",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "cda_govt_hospital": {
+      "name": "CDA Government Hospital",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "cda_market_complex_mahanadi": {
+      "name": "CDA Market Complex, Mahanadi Vihar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "cda_sector_6": {
+      "name": "CDA Sector-6",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "cda_sector_6_road": {
+      "name": "CDA Sec-6 Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "cda_sector_7": {
+      "name": "CDA Sector-7",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "cda_sector_8": {
+      "name": "CDA Sector-8",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "cda_sector_8_road": {
+      "name": "CDA Sector 8 Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "cda_sector_9": {
+      "name": "CDA Sector-9",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "cda_sector_10": {
+      "name": "CDA Sector-10",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "cda_sector_10_road": {
+      "name": "CDA Sector 10 Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "cda_sector_11": {
+      "name": "CDA Sector-11",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "cda_sector_13": {
+      "name": "CDA Sector-13",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "cda_sector_13_road": {
+      "name": "CDA Sector-13 Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "cda_sector_13_road1": {
+      "name": "CDA Sector-13 Road1",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "cesu_cda_9": {
+      "name": "CESU CDA 9 Road",
+      "city": "Cuttack",
+      "type": "utility"
+    },
+    "chahata_ghata": {
+      "name": "Chahata Ghata",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "chahata_nagar_lane_4": {
+      "name": "Chahata Nagar Lane 4",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "champati_road": {
+      "name": "Champati Road",
+      "city": "Salepur",
+      "type": "road"
+    },
+    "chanapur": { "name": "Chanapur", "city": "Kakatpur", "type": "village" },
+    "chandaka": { "name": "Chandaka", "city": "Bhubaneswar", "type": "area" },
+    "chandaka_college": {
+      "name": "Chandaka College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "chandaka_market": {
+      "name": "Chandaka Market",
+      "city": "Bhubaneswar",
+      "type": "market"
+    },
+    "chandanpur": { "name": "Chandanpur", "city": "Puri", "type": "village" },
+    "chandanpur_bazar": {
+      "name": "Chandanpur Bazar",
+      "city": "Puri",
+      "type": "market"
+    },
+    "chandanpur_bypass": {
+      "name": "Chandanpur Bypass",
+      "city": "Puri",
+      "type": "highway"
+    },
+    "chandrabhaga_beach": {
+      "name": "Chandrabhaga Beach",
+      "city": "Konark",
+      "type": "tourist",
+      "famous": true
+    },
+    "chandrashekharpur": {
+      "name": "Chandrashekharpur",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "chandrashekharpur_ps": {
+      "name": "Chandrashekharpur P.S.",
+      "city": "Bhubaneswar",
+      "type": "police_station"
+    },
+    "chanduli_bridge": {
+      "name": "Chanduli Bridge",
+      "city": "Cuttack",
+      "type": "landmark"
+    },
+    "charishree_road": {
+      "name": "Charishree Road",
+      "city": "Puri",
+      "type": "road"
+    },
+    "charbatia": { "name": "Charbatia", "city": "Cuttack", "type": "village" },
+    "chauliaganj_durga_mandap": {
+      "name": "Chauliaganj Durga Mandap",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "chauliaganj_police_outpost": {
+      "name": "Chauliaganj Police Outpost",
+      "city": "Cuttack",
+      "type": "police_station"
+    },
+    "chena_chaka": {
+      "name": "Chena Chaka",
+      "city": "Konark",
+      "type": "junction"
+    },
+    "chhatra_bazar": {
+      "name": "Chhatra Bazar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "chilika": { "name": "Chilika", "city": "Khordha", "type": "tourist" },
+    "chili_pokhari": {
+      "name": "Chili Pokhari",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "chotrapur": { "name": "Chotrapur", "city": "Kakatpur", "type": "village" },
+    "choudwar": { "name": "Choudwar", "city": "Cuttack", "type": "town" },
+    "choudwar_jail": {
+      "name": "Choudwar Jail",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "choudwar_ps": {
+      "name": "Choudwar P.S",
+      "city": "Cuttack",
+      "type": "police_station"
+    },
+    "cifa": { "name": "CIFA", "city": "Bhubaneswar", "type": "research" },
+    "cifa_gate": {
+      "name": "CIFA Gate",
+      "city": "Bhubaneswar",
+      "type": "landmark"
+    },
+    "city_college_cuttack": {
+      "name": "City College, Cuttack",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "city_womens_college": {
+      "name": "City Womens College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "clock_tower": {
+      "name": "Clock Tower",
+      "city": "Cuttack",
+      "type": "landmark"
+    },
+    "cnbt": {
+      "name": "CNBT (Cuttack New Bus Terminal)",
+      "city": "Cuttack",
+      "type": "terminal",
+      "major_hub": true
+    },
+    "collector_office_puri": {
+      "name": "Collector Office",
+      "city": "Puri",
+      "type": "government"
+    },
+    "college_chaka_kakatpur": {
+      "name": "College Chaka",
+      "city": "Kakatpur",
+      "type": "junction"
+    },
+    "crpf_kv": {
+      "name": "CRPF KV",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "crpf_square": {
+      "name": "CRPF Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "cuttack_railway_station": {
+      "name": "Cuttack Railway Station",
+      "city": "Cuttack",
+      "type": "railway_station",
+      "coordinates": { "lat": 20.4654, "lon": 85.8839 }
+    },
+    "cuttack_sai_temple": {
+      "name": "Cuttack Sai Temple",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "dadhibamanpur": {
+      "name": "Dadhibamanpur",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "dagarpada_road": {
+      "name": "Dagarpada Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "dahi_gaon": { "name": "Dahi Gaon", "city": "Cuttack", "type": "village" },
+    "dakhineswar_mahadev": {
+      "name": "Dakhineswar Mahadev Temple",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "dalua_square": {
+      "name": "Dalua Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "damana_square": {
+      "name": "Damana Square",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "damodarpur_bazar": {
+      "name": "Damodarpur Bazar",
+      "city": "Puri",
+      "type": "market"
+    },
+    "daruthenga": {
+      "name": "Daruthenga",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "daruthenga_school": {
+      "name": "Daruthenga School",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "dav_school": {
+      "name": "DAV School",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "deer_park": { "name": "Deer Park", "city": "Cuttack", "type": "park" },
+    "delanga": { "name": "Delanga", "city": "Puri", "type": "town" },
+    "delta_gada": {
+      "name": "Delta Gada",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "delta_square": {
+      "name": "Delta Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "deuli": { "name": "Deuli", "city": "Cuttack", "type": "village" },
+    "dhauli_square": {
+      "name": "Dhauli Square (Shanti Stupa)",
+      "city": "Bhubaneswar",
+      "type": "tourist",
+      "landmark": true
+    },
+    "dhabaleswar": {
+      "name": "Dhabaleswar Temple",
+      "city": "Cuttack",
+      "type": "religious",
+      "famous": true
+    },
+    "dhabaleswar_temple_rd": {
+      "name": "Dhabaleswar Temple Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "dighalo": { "name": "Dighalo", "city": "Nimapada", "type": "village" },
+    "district_jail_puri": {
+      "name": "District Jail Puri",
+      "city": "Puri",
+      "type": "government"
+    },
+    "dlf_cyber_city": {
+      "name": "DLF Cyber City",
+      "city": "Bhubaneswar",
+      "type": "it_park"
+    },
+    "dolamundai_square": {
+      "name": "Dolamundai Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "dps_kalinga": {
+      "name": "DPS Kalinga",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "drda_khordha": { "name": "DRDA", "city": "Khordha", "type": "government" },
+    "drdo_puri": { "name": "DRDO", "city": "Puri", "type": "research" },
+    "drug_controller_office": {
+      "name": "Drug Controller Office",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "durgapur": { "name": "Durgapur", "city": "Bhubaneswar", "type": "area" },
+    "dwaraka_hotel": {
+      "name": "Dwaraka Hotel",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "east_college": {
+      "name": "East College",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "e_kart_logistics": {
+      "name": "E-Kart Logistic Hub",
+      "city": "Salepur",
+      "type": "commercial"
+    },
+    "ekamra_college": {
+      "name": "Ekamra College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "ekamra_kanan": {
+      "name": "Ekamra Kanan",
+      "city": "Bhubaneswar",
+      "type": "park"
+    },
+    "eye_hospital_square": {
+      "name": "Eye Hospital Square",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "fakirpada": { "name": "Fakirpada", "city": "Cuttack", "type": "area" },
+    "fire_station_niali": {
+      "name": "Fire Station Niali",
+      "city": "Niali",
+      "type": "government"
+    },
+    "fire_station_puri": {
+      "name": "Fire Station Square",
+      "city": "Puri",
+      "type": "government"
+    },
+    "fire_station_square_bbsr": {
+      "name": "Fire Station Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "front_gate_rail_stn": {
+      "name": "Front Gate Rail. Stn.",
+      "city": "Cuttack",
+      "type": "railway_station"
+    },
+    "gada_khordha": {
+      "name": "Gada Khordha",
+      "city": "Khordha",
+      "type": "area"
+    },
+    "gadakana_depot": {
+      "name": "Gadakana Depot",
+      "city": "Bhubaneswar",
+      "type": "transport"
+    },
+    "gadama": { "name": "Gadama", "city": "Cuttack", "type": "village" },
+    "gandarpur": { "name": "Gandarpur", "city": "Cuttack", "type": "area" },
+    "gandamunda": {
+      "name": "Gandamunda",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "gandhi_chaka_choudwar": {
+      "name": "Gandhi Chaka",
+      "city": "Choudwar",
+      "type": "junction"
+    },
+    "ganesh_bazar_bidyadharpur": {
+      "name": "Ganesh Bazar, Bidyadharpur",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "gangapada": { "name": "Gangapada", "city": "Bhubaneswar", "type": "area" },
+    "gatiraut_patna": {
+      "name": "Gatiraut Patna",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "gec": {
+      "name": "GEC (Gandhi Engineering College)",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "ghanashyam_hemalata_college": {
+      "name": "Ghanashyam Hemalata College",
+      "city": "Puri",
+      "type": "educational"
+    },
+    "ghangapatna_square": {
+      "name": "Ghangapatna Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "ghatakula": { "name": "Ghatakula", "city": "Cuttack", "type": "area" },
+    "ghatikia": { "name": "Ghatikia", "city": "Bhubaneswar", "type": "area" },
+    "gita": {
+      "name": "GITA (Gandhi Institute)",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "gm_law_college": {
+      "name": "GM Law College",
+      "city": "Puri",
+      "type": "educational"
+    },
+    "godibari_nature_camp": {
+      "name": "Godibari Nature Camp",
+      "city": "Bhubaneswar",
+      "type": "tourist"
+    },
+    "godibari_village": {
+      "name": "Godibari Village",
+      "city": "Bhubaneswar",
+      "type": "village"
+    },
+    "godi_sahi": { "name": "Godi Sahi", "city": "Cuttack", "type": "area" },
+    "gohiria_square": {
+      "name": "Gohiria Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "gopalpur_railway_station": {
+      "name": "Gopalpur Railway Station",
+      "city": "Bhubaneswar",
+      "type": "railway_station"
+    },
+    "gopabandhu_chaka": {
+      "name": "Gopabandhu Chaka",
+      "city": "Konark",
+      "type": "junction"
+    },
+    "gopabandhu_janmapitha": {
+      "name": "Gopabandhu Janmapitha",
+      "city": "Puri",
+      "type": "monument"
+    },
+    "gopabandhu_nagar": {
+      "name": "Gopabandhu Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "gopabandhu_square": {
+      "name": "Gopabandhu Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "gop": { "name": "GOP", "city": "Puri", "type": "town" },
+    "gop_market": { "name": "GOP Market", "city": "Puri", "type": "market" },
+    "gop_ps": { "name": "GOP P.S.", "city": "Puri", "type": "police_station" },
+    "gothapatna_square": {
+      "name": "Gothapatna Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "govindpur_chaka": {
+      "name": "Govindpur Chaka",
+      "city": "Cuttack",
+      "type": "junction"
+    },
+    "govindpur_market": {
+      "name": "Govindpur Market",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "governor_house_square": {
+      "name": "Governor House Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "grid_station_puri": {
+      "name": "Grid Station",
+      "city": "Puri",
+      "type": "utility"
+    },
+    "gulgula_chhak": {
+      "name": "Gulgula Chhak",
+      "city": "Nimapada",
+      "type": "junction"
+    },
+    "gunjarpur": { "name": "Gunjarpur", "city": "Salepur", "type": "village" },
+    "hanspal_square": {
+      "name": "Hanspal Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "hanuman_temple_sandhapur": {
+      "name": "Hanuman Temple Sandhapur",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "haridaspur": {
+      "name": "Haridaspur",
+      "city": "Kakatpur",
+      "type": "village"
+    },
+    "haripur": { "name": "Haripur", "city": "Nimapada", "type": "village" },
+    "high_court_road": {
+      "name": "High Court Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "highway_honda": {
+      "name": "Highway Honda",
+      "city": "Bhubaneswar",
+      "type": "commercial"
+    },
+    "hitech_heaven": {
+      "name": "Hi-Tech Heaven",
+      "city": "Bhubaneswar",
+      "type": "commercial"
+    },
+    "hitech_hospital_square": {
+      "name": "Hi-Tech Hospital Square",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "housing_board_colony": {
+      "name": "Housing Board Colony",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "icai_bhawan": {
+      "name": "ICAI Bhawan",
+      "city": "Cuttack",
+      "type": "professional"
+    },
+    "ichhapur": { "name": "Ichhapur", "city": "Adaspur", "type": "village" },
+    "idco_tower": {
+      "name": "IDCO Tower",
+      "city": "Bhubaneswar",
+      "type": "corporate"
+    },
+    "igkc_hospital": {
+      "name": "IGKC Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "iiit_bhubaneswar": {
+      "name": "IIIT Bhubaneswar",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "iiit_square": {
+      "name": "IIIT Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "iit_bhubaneswar": {
+      "name": "IIT Bhubaneswar",
+      "city": "Bhubaneswar",
+      "type": "educational",
+      "coordinates": { "lat": 20.1489, "lon": 85.6709 }
+    },
+    "imam_nagar": { "name": "Imam Nagar", "city": "Salepur", "type": "area" },
+    "imfa_gate_12": {
+      "name": "IMFA Gate 12",
+      "city": "Choudwar",
+      "type": "industrial"
+    },
+    "immt": { "name": "IMMT", "city": "Bhubaneswar", "type": "research" },
+    "indira_bazar": {
+      "name": "Indira Bazar",
+      "city": "Kakatpur",
+      "type": "market"
+    },
+    "industrial_estate_road": {
+      "name": "Industrial Estate Road",
+      "city": "Cuttack",
+      "type": "industrial"
+    },
+    "infocity": {
+      "name": "Infocity",
+      "city": "Bhubaneswar",
+      "type": "it_park"
+    },
+    "infosys_ii": {
+      "name": "Infosys II",
+      "city": "Bhubaneswar",
+      "type": "it_corporate"
+    },
+    "infovalley": {
+      "name": "Infovalley",
+      "city": "Bhubaneswar",
+      "type": "it_park"
+    },
+    "infovalley_ps": {
+      "name": "Infovalley P.S",
+      "city": "Bhubaneswar",
+      "type": "police_station"
+    },
+    "ipicol_square": {
+      "name": "IPICOL Square",
+      "city": "Jagatpur",
+      "type": "industrial"
+    },
+    "ipsar": { "name": "IPSAR", "city": "Cuttack", "type": "government" },
+    "iskcon_temple": {
+      "name": "ISKCON Temple",
+      "city": "Bhubaneswar",
+      "type": "religious",
+      "landmark": true
+    },
+    "iter_college": {
+      "name": "ITER College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "jagadguru_krupalu_university": {
+      "name": "Jagadguru Krupalu University (JKU)",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "jagamohan_temple": {
+      "name": "Jagamohan Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "jagamara": { "name": "Jagamara", "city": "Bhubaneswar", "type": "area" },
+    "jagannath_medical_college": {
+      "name": "Jagannath Medical College",
+      "city": "Puri",
+      "type": "hospital"
+    },
+    "jagannath_stadium": {
+      "name": "Jagannath Stadium",
+      "city": "Puri",
+      "type": "sports"
+    },
+    "jagannath_temple": {
+      "name": "Shree Jagannath Temple (Shree Mandira)",
+      "city": "Puri",
+      "type": "religious",
+      "famous": true,
+      "unesco": false
+    },
+    "jagannath_temple_salepur": {
+      "name": "Jagannath Temple Salepur",
+      "city": "Salepur",
+      "type": "religious"
+    },
+    "jagannath_vihar": {
+      "name": "Jagannath Vihar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "jagatpur": { "name": "Jagatpur", "city": "Cuttack", "type": "industrial" },
+    "jagatpur_ps": {
+      "name": "Jagatpur P.S",
+      "city": "Cuttack",
+      "type": "police_station"
+    },
+    "jalaharpur": { "name": "Jalaharpur", "city": "Niali", "type": "village" },
+    "jamara": { "name": "Jamara", "city": "Konark", "type": "village" },
+    "janla_medical": {
+      "name": "Janla Medical",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "janla_post_office": {
+      "name": "Janla Post Office",
+      "city": "Bhubaneswar",
+      "type": "post_office"
+    },
+    "jatani": { "name": "Jatani", "city": "Jatani", "type": "town" },
+    "jatani_gate": { "name": "Jatani Gate", "city": "Jatani", "type": "major" },
+    "jatni": { "name": "Jatni", "city": "Khordha", "type": "town" },
+    "jaydev_vihar": {
+      "name": "Jaydev Vihar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "jaydev_vihar_flyover": {
+      "name": "Jaydev Vihar Flyover",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "jaydev_vihar_square": {
+      "name": "Jaydev Vihar Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "jaypur_road": { "name": "Jaypur Road", "city": "Cuttack", "type": "road" },
+    "jayshree_chhak": {
+      "name": "Jayshree Chhak",
+      "city": "Nimapada",
+      "type": "junction"
+    },
+    "jhadeswari_square": {
+      "name": "Jhadeswari Square",
+      "city": "Puri",
+      "type": "major"
+    },
+    "jharpada": {
+      "name": "Jharpada",
+      "city": "Bhubaneswar",
+      "type": "industrial"
+    },
+    "jharpada_road_kantapada": {
+      "name": "Jharpada Road",
+      "city": "Kantapada",
+      "type": "road"
+    },
+    "jhinkiria": { "name": "Jhinkiria", "city": "Cuttack", "type": "village" },
+    "jku": {
+      "name": "JKU (Jagadguru Krupalu University)",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "jobra_anicut": {
+      "name": "Jobra Anicut",
+      "city": "Cuttack",
+      "type": "landmark"
+    },
+    "jujhagada": { "name": "Jujhagada", "city": "Cuttack", "type": "area" },
+    "judicial_academy": {
+      "name": "Judicial Academy",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "junei": { "name": "Junei", "city": "Konark", "type": "village" },
+    "jungle_view": { "name": "Jungle View", "city": "Cuttack", "type": "area" },
+    "jupiter_college": {
+      "name": "Jupiter College",
+      "city": "Khordha",
+      "type": "educational"
+    },
+    "justice_chakk_mahanadi": {
+      "name": "Justice Chakk, Mahanadi Vihar",
+      "city": "Cuttack",
+      "type": "junction"
+    },
+    "justice_square": {
+      "name": "Justice Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "jyotsna_vihar": {
+      "name": "Jyotsna Vihar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "k9": { "name": "K9", "city": "Bhubaneswar", "type": "area" },
+    "kadali_bari": { "name": "Kadali Bari", "city": "Puri", "type": "area" },
+    "kajipatna": { "name": "Kajipatna", "city": "Nimapada", "type": "village" },
+    "kakatpur": { "name": "Kakatpur", "city": "Kakatpur", "type": "town" },
+    "kakatpur_new_bus_stand": {
+      "name": "Kakatpur New Bus Stand",
+      "city": "Kakatpur",
+      "type": "terminal"
+    },
+    "kakatpur_old_bus_stand": {
+      "name": "Old Bus Stand, Kakatpur",
+      "city": "Kakatpur",
+      "type": "terminal"
+    },
+    "kala_bhoomi": {
+      "name": "Kala Bhoomi",
+      "city": "Bhubaneswar",
+      "type": "cultural"
+    },
+    "kalapada_market": {
+      "name": "Kalapada Market",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "kali_mandir_choudwar": {
+      "name": "Kali Mandir Choudwar",
+      "city": "Choudwar",
+      "type": "religious"
+    },
+    "kaliaboda_temple": {
+      "name": "Kaliaboda Temple",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "kaliaghai_market": {
+      "name": "Kaliaghai Market",
+      "city": "Niali",
+      "type": "market"
+    },
+    "kalinga_bazar": {
+      "name": "Kalinga Bazar",
+      "city": "Choudwar",
+      "type": "market"
+    },
+    "kalinga_hospital_square": {
+      "name": "Kalinga Hospital Square",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "kalinga_studio_square": {
+      "name": "Kalinga Studio Square",
+      "city": "Bhubaneswar",
+      "type": "commercial"
+    },
+    "kalinga_vihar": {
+      "name": "Kalinga Vihar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "kalinga_vihar_square": {
+      "name": "Kalinga Vihar Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "kalpana_square": {
+      "name": "Kalpana Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "kamarpada": { "name": "Kamarpada", "city": "Cuttack", "type": "village" },
+    "kandarpur": { "name": "Kandarpur", "city": "Cuttack", "type": "village" },
+    "kandarpur_college": {
+      "name": "Kandarpur College",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "kantabada": { "name": "Kantabada", "city": "Bhubaneswar", "type": "area" },
+    "kantabada_bazar": {
+      "name": "Kantabada Bazar",
+      "city": "Bhubaneswar",
+      "type": "market"
+    },
+    "kantapada": { "name": "Kantapada", "city": "Cuttack", "type": "village" },
+    "kantunia": { "name": "Kantunia", "city": "Cuttack", "type": "village" },
+    "kateni": { "name": "Kateni", "city": "Bhubaneswar", "type": "area" },
+    "kazi_bazar": { "name": "Kazi Bazar", "city": "Salepur", "type": "market" },
+    "kec_college": {
+      "name": "KEC College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "kelucharan_park": {
+      "name": "Kelucharan Park",
+      "city": "Bhubaneswar",
+      "type": "park"
+    },
+    "kendriya_vidyalaya_3": {
+      "name": "Kendriya Vidyalaya No.3",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "keshab_dham_road": {
+      "name": "Keshab Dham Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "keshpur": { "name": "Keshpur", "city": "Cuttack", "type": "village" },
+    "khaira_bridge": {
+      "name": "Khaira Bridge",
+      "city": "Salepur",
+      "type": "landmark"
+    },
+    "khajasuni_temple": {
+      "name": "Khajasuni Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "khannagar_traffic": {
+      "name": "Khannagar Traffic",
+      "city": "Cuttack",
+      "type": "traffic_junction"
+    },
+    "khapuria_square": {
+      "name": "Khapuria Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "kharakhia": { "name": "Kharakhia", "city": "Salepur", "type": "village" },
+    "kharakhia_market": {
+      "name": "Kharakhia Market",
+      "city": "Salepur",
+      "type": "market"
+    },
+    "khandagiri": {
+      "name": "Khandagiri",
+      "city": "Bhubaneswar",
+      "type": "tourist"
+    },
+    "khandagiri_bypass": {
+      "name": "Khandagiri Bypass",
+      "city": "Bhubaneswar",
+      "type": "highway"
+    },
+    "khandagiri_square": {
+      "name": "Khandagiri Square",
+      "city": "Bhubaneswar",
+      "type": "tourist"
+    },
+    "khordha": { "name": "Khordha", "city": "Khordha", "type": "town" },
+    "khordha_bypass_square": {
+      "name": "Khordha Bypass Square",
+      "city": "Khordha",
+      "type": "major"
+    },
+    "khordha_new_bus_stand": {
+      "name": "Khordha New Bus Stand",
+      "city": "Khordha",
+      "type": "terminal"
+    },
+    "kiit_campus": {
+      "name": "KIIT Campus",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "kiit_square": {
+      "name": "KIIT Square",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "kims_hospital": {
+      "name": "KIMS Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "kiss_college": {
+      "name": "KISS College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "koel_campus": {
+      "name": "Koel Campus",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "kolathia": { "name": "Kolathia", "city": "Bhubaneswar", "type": "area" },
+    "konark": { "name": "Konark", "city": "Konark", "type": "town" },
+    "konark_ps": {
+      "name": "Konark P.S.",
+      "city": "Konark",
+      "type": "police_station"
+    },
+    "konark_sun_temple": {
+      "name": "Konark Sun Temple (UNESCO World Heritage)",
+      "city": "Konark",
+      "type": "tourist",
+      "unesco": true,
+      "famous": true
+    },
+    "krushak_bazar": {
+      "name": "Krushak Bazar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "kshetrabasi_iti": {
+      "name": "Kshetrabasi ITI Fakirpada",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "kujimahal_square": {
+      "name": "Kujimahal Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "kulakalapada": {
+      "name": "Kulakalapada",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "kulasarichuan": {
+      "name": "Kulasarichuan",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "kumbharbasta_square": {
+      "name": "Kumbharbasta Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "kumbharpada_ps": {
+      "name": "Kumbharpada P.S",
+      "city": "Puri",
+      "type": "police_station"
+    },
+    "kundhei_hata": {
+      "name": "Kundhei Hata",
+      "city": "Kakatpur",
+      "type": "area"
+    },
+    "kunheipara": { "name": "Kunheipara", "city": "Cuttack", "type": "area" },
+    "kuranga": { "name": "Kuranga", "city": "Cuttack", "type": "village" },
+    "kurujang": { "name": "Kurujang", "city": "Konark", "type": "village" },
+    "kusameswar": { "name": "Kusameswar", "city": "Puri", "type": "village" },
+    "laxmanpur": { "name": "Laxmanpur", "city": "Cuttack", "type": "area" },
+    "laxmi_nrusingha_bazar": {
+      "name": "Laxmi Nrusingha Bazar",
+      "city": "Salepur",
+      "type": "market"
+    },
+    "light_house_puri": {
+      "name": "Light House, Puri",
+      "city": "Puri",
+      "type": "tourist"
+    },
+    "lingaraj_station": {
+      "name": "Lingaraj Station",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "lingaraj_temple": {
+      "name": "Lingaraj Temple",
+      "city": "Bhubaneswar",
+      "type": "religious",
+      "famous": true,
+      "landmark": true
+    },
+    "lingipur": { "name": "Lingipur", "city": "Bhubaneswar", "type": "area" },
+    "link_road_cuttack": {
+      "name": "Link Road",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "lotus_resort": {
+      "name": "Lotus Resort",
+      "city": "Puri",
+      "type": "commercial"
+    },
+    "maachhua_bazar": {
+      "name": "Maachhua Bazar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "machuati": { "name": "Machuati", "city": "Salepur", "type": "village" },
+    "madan_mohan_market": {
+      "name": "Madan Mohan Market",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "madanpur": { "name": "Madanpur", "city": "Bhubaneswar", "type": "area" },
+    "madhab_gp": { "name": "Madhab G.P", "city": "Niali", "type": "village" },
+    "madhabananda_high_school": {
+      "name": "Madhabananda High School",
+      "city": "Niali",
+      "type": "educational"
+    },
+    "madhabananda_temple": {
+      "name": "Madhabananda Temple, Niali",
+      "city": "Niali",
+      "type": "religious",
+      "famous": true
+    },
+    "madhuban": { "name": "Madhuban", "city": "Cuttack", "type": "area" },
+    "madhusudan_bridge_sqr": {
+      "name": "Madhusudan Bridge Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "madhusudan_park": {
+      "name": "Madhusudan Park",
+      "city": "Bhubaneswar",
+      "type": "park"
+    },
+    "madipur_chhak": {
+      "name": "Madipur Chhak",
+      "city": "Konark",
+      "type": "junction"
+    },
+    "mahajanpur": {
+      "name": "Mahajanpur",
+      "city": "Salepur",
+      "type": "village"
+    },
+    "mahanadi_campus_ravenshaw": {
+      "name": "Mahanadi Campus (Ravenshaw University)",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "mahanadi_vihar": {
+      "name": "Mahanadi Vihar",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "maharshi_college_square": {
+      "name": "Maharshi College Square",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "majikhanda_chaka": {
+      "name": "Majikhanda Chaka",
+      "city": "Niali",
+      "type": "junction"
+    },
+    "mal_godown": {
+      "name": "Mal Godown",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "malatipatpur": {
+      "name": "Malatipatpur",
+      "city": "Puri",
+      "type": "village"
+    },
+    "malipada": { "name": "Malipada", "city": "Bhubaneswar", "type": "area" },
+    "mancheswar": {
+      "name": "Mancheswar Industrial Estate",
+      "city": "Bhubaneswar",
+      "type": "industrial"
+    },
+    "manu_university_cuttack": {
+      "name": "Manu University, Cuttack",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "mangraj_point_kesora": {
+      "name": "Mangraj Point Kesora",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "markatnagar_cda_7": {
+      "name": "Markatnagar CDA 7",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "masanigada_bidanasi": {
+      "name": "Masanigada Bidanasi",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "master_canteen": {
+      "name": "Master Canteen",
+      "city": "Bhubaneswar",
+      "type": "major",
+      "coordinates": { "lat": 20.2721, "lon": 85.8377 }
+    },
+    "matamatha": { "name": "Matamatha", "city": "Cuttack", "type": "area" },
+    "matha_sahi_road": {
+      "name": "Matha Sahi Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "matiapada_square": {
+      "name": "Matiapada Square",
+      "city": "Puri",
+      "type": "major"
+    },
+    "medical_chhak_puri": {
+      "name": "Medical Chhak",
+      "city": "Puri",
+      "type": "junction"
+    },
+    "megheswar_temple": {
+      "name": "Megheswar Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "midland_height": {
+      "name": "Midland Height",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "millenium_city": {
+      "name": "Millenium City",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "mukunda_mishra_nagar": {
+      "name": "Mukunda Mishra Nagar",
+      "city": "Puri",
+      "type": "residential"
+    },
+    "mukteshwar_temple": {
+      "name": "Mukteshwar Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "mundamuhan_square": {
+      "name": "Mundamuhan Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "munida": { "name": "Munida", "city": "Puri", "type": "village" },
+    "municipality_market_puri": {
+      "name": "Municipality Market Square",
+      "city": "Puri",
+      "type": "market"
+    },
+    "municipality_office_choudwar": {
+      "name": "Municipality Office Choudwar",
+      "city": "Choudwar",
+      "type": "government"
+    },
+    "nabard": { "name": "Nabard", "city": "Bhubaneswar", "type": "government" },
+    "nagapatana": { "name": "Nagapatana", "city": "Puri", "type": "area" },
+    "nakhara_square": {
+      "name": "Nakhara Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "nalia_munha": {
+      "name": "Nalia Munha",
+      "city": "Salepur",
+      "type": "village"
+    },
+    "nalanda_institute": {
+      "name": "Nalanda Institute of Technology",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "nandankanan": {
+      "name": "Nandankanan Zoological Park",
+      "city": "Bhubaneswar",
+      "type": "tourist",
+      "famous": true,
+      "landmark": true
+    },
+    "nandolgada": {
+      "name": "Nandolgada",
+      "city": "Salepur",
+      "type": "village"
+    },
+    "nanpur": { "name": "Nanpur", "city": "Cuttack", "type": "village" },
+    "narendra_pond": {
+      "name": "Narendra Pond",
+      "city": "Puri",
+      "type": "landmark"
+    },
+    "naveen_nivas": {
+      "name": "Naveen Nivas",
+      "city": "Bhubaneswar",
+      "type": "government"
+    },
+    "nayabazar_cuttack": {
+      "name": "Nayabazar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "nayapalli": {
+      "name": "Nayapalli",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "ncc_canteen": {
+      "name": "NCC Canteen",
+      "city": "Bhubaneswar",
+      "type": "canteen"
+    },
+    "ncc_csd_canteen": {
+      "name": "NCC CSD Canteen",
+      "city": "Cuttack",
+      "type": "canteen"
+    },
+    "netal": { "name": "Netal", "city": "Cuttack", "type": "village" },
+    "netaji_subhash_chhak": {
+      "name": "Netaji Subhash Chhak",
+      "city": "Cuttack",
+      "type": "junction"
+    },
+    "new_airport_square": {
+      "name": "New Airport Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "niali": { "name": "Niali", "city": "Niali", "type": "town" },
+    "niali_college": {
+      "name": "Niali College",
+      "city": "Niali",
+      "type": "educational"
+    },
+    "niali_high_school": {
+      "name": "Niali High School",
+      "city": "Niali",
+      "type": "educational"
+    },
+    "niali_ps": {
+      "name": "Niali P.S",
+      "city": "Niali",
+      "type": "police_station"
+    },
+    "nigam_institute": {
+      "name": "Nigam Institute",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "nilachal_nagar": {
+      "name": "Nilachal Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "nilakantha_nath_road": {
+      "name": "Nilakantha Nath Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "nimapada": { "name": "Nimapada", "city": "Nimapada", "type": "town" },
+    "nimapada_bus_stand": {
+      "name": "Nimapada Bus Stand",
+      "city": "Nimapada",
+      "type": "terminal"
+    },
+    "nimapada_old_bus_stand": {
+      "name": "Nimapada Old Bus Stand",
+      "city": "Nimapada",
+      "type": "terminal"
+    },
+    "nimapada_womens_college": {
+      "name": "Nimapada Women College",
+      "city": "Nimapada",
+      "type": "educational"
+    },
+    "niser": {
+      "name": "NISER",
+      "city": "Bhubaneswar",
+      "type": "educational",
+      "research": true
+    },
+    "nishamani_talkies": {
+      "name": "Nishamani Talkies",
+      "city": "Cuttack",
+      "type": "entertainment"
+    },
+    "nlu_cuttack": {
+      "name": "NLU (National Law University)",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "nrri_main_gate": {
+      "name": "NRRI Main Gate",
+      "city": "Cuttack",
+      "type": "research"
+    },
+    "nua_sahi_bidanasi": {
+      "name": "Nua Sahi Bidanasi",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "nuagan_square": {
+      "name": "Nuagan Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "nuagaon_niali": { "name": "Nuagaon", "city": "Niali", "type": "village" },
+    "nuapatana_road": {
+      "name": "Nuapatana Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "ocean_water_park": {
+      "name": "Ocean Water Park",
+      "city": "Cuttack",
+      "type": "tourist"
+    },
+    "odagaon": { "name": "Odagaon", "city": "Puri", "type": "town" },
+    "odisha_adarsha_vidyalaya": {
+      "name": "Odisha Adarsha Vidyalaya Arilo",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "officer_colony_cuttack": {
+      "name": "Officer's Colony Cuttack",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "ogalapada": { "name": "Ogalapada", "city": "Bhubaneswar", "type": "area" },
+    "old_airport_square": {
+      "name": "Old Airport Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "old_collector_office": {
+      "name": "Old Collector Office",
+      "city": "Khordha",
+      "type": "government"
+    },
+    "olatpur": { "name": "Olatpur", "city": "Cuttack", "type": "village" },
+    "omfed_dairy": {
+      "name": "Omfed Dairy",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "omp_square": { "name": "OMP Square", "city": "Cuttack", "type": "major" },
+    "opsc": { "name": "OPSC", "city": "Cuttack", "type": "government" },
+    "orissa_diesel": {
+      "name": "Orissa Diesel",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "othaka_hata": {
+      "name": "Othaka Hata",
+      "city": "Kakatpur",
+      "type": "area"
+    },
+    "ouat": {
+      "name": "OUAT (Agriculture University)",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "ouat_square": {
+      "name": "OUAT Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "pachabati_bazar": {
+      "name": "Pachabati Bazar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "padamapur": { "name": "Padamapur", "city": "Salepur", "type": "village" },
+    "padamapur_uphc": {
+      "name": "Padamapur UPHC",
+      "city": "Salepur",
+      "type": "hospital"
+    },
+    "padmalava_nagar": {
+      "name": "Padmalava Nagar",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "paga_chhaka": {
+      "name": "Paga Chhaka",
+      "city": "Salepur",
+      "type": "junction"
+    },
+    "pahal": { "name": "Pahal", "city": "Bhubaneswar", "type": "area" },
+    "paikarapur": {
+      "name": "RI Paikarapur",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "pala_mandap": {
+      "name": "Pala Mandap",
+      "city": "Cuttack",
+      "type": "landmark"
+    },
+    "palasuni": {
+      "name": "Palasuni",
+      "city": "Bhubaneswar",
+      "type": "industrial"
+    },
+    "palaspalli": {
+      "name": "Palaspalli",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "pallahata_square": {
+      "name": "Pallahata Square",
+      "city": "Khordha",
+      "type": "major"
+    },
+    "panda_sahi_road": {
+      "name": "Pandasahi Road",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "pandra": { "name": "Pandra", "city": "Bhubaneswar", "type": "area" },
+    "panimala": { "name": "Panimala", "city": "Niali", "type": "village" },
+    "parashurameshwar_temple": {
+      "name": "Parashurameshwar Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "pathargadia_square": {
+      "name": "Pathargadia Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "patapur_kakatpur": {
+      "name": "Patapur",
+      "city": "Kakatpur",
+      "type": "village"
+    },
+    "patapur_cuttack": {
+      "name": "Patapur",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "patia": { "name": "Patia", "city": "Bhubaneswar", "type": "residential" },
+    "patia_square": {
+      "name": "Patia Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "patrapada": { "name": "Patrapada", "city": "Bhubaneswar", "type": "area" },
+    "pattanaikia": {
+      "name": "Pattanaikia",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "peer_bazar": { "name": "Peer Bazar", "city": "Salepur", "type": "market" },
+    "pilgrim_rd": { "name": "Pilgrim Rd", "city": "Cuttack", "type": "road" },
+    "pipili": {
+      "name": "Pipili",
+      "city": "Puri",
+      "type": "town",
+      "famous": true
+    },
+    "pipili_bypass": {
+      "name": "Pipili Bypass",
+      "city": "Puri",
+      "type": "highway"
+    },
+    "pipili_over_bridge_sq": {
+      "name": "Pipili Over Bridge Square",
+      "city": "Puri",
+      "type": "major"
+    },
+    "pitapalli_petrol_pump": {
+      "name": "Pitapalli Petrol Pump",
+      "city": "Khordha",
+      "type": "commercial"
+    },
+    "pitapalli_square": {
+      "name": "Pitapalli Square",
+      "city": "Khordha",
+      "type": "major"
+    },
+    "pkda": { "name": "PKDA", "city": "Puri", "type": "government" },
+    "pn_college": {
+      "name": "PN College",
+      "city": "Khordha",
+      "type": "educational"
+    },
+    "pokhariput": {
+      "name": "Pokhariput",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "police_aid_brahmani": {
+      "name": "Police Aid Brahmani Jharilo",
+      "city": "Cuttack",
+      "type": "police_station"
+    },
+    "police_high_school": {
+      "name": "Police High School",
+      "city": "Puri",
+      "type": "educational"
+    },
+    "police_line_puri": {
+      "name": "Police Line",
+      "city": "Puri",
+      "type": "government"
+    },
+    "police_outpost_naraj": {
+      "name": "Police Out Post, Naraj",
+      "city": "Cuttack",
+      "type": "police_station"
+    },
+    "police_signal_traffic": {
+      "name": "Police Signal Traffic School",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "poonama_flyover": {
+      "name": "Poonama Flyover",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "power_house_square": {
+      "name": "Power House Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "pratap_nagari": {
+      "name": "Pratap Nagari",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "presidency_resorts": {
+      "name": "Presidency Resorts",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "professor_pada": {
+      "name": "Professor Pada",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "professors_colony": {
+      "name": "Professors Colony",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "puri_bus_stand": {
+      "name": "Puri Bus Stand",
+      "city": "Puri",
+      "type": "terminal",
+      "major_hub": true
+    },
+    "puri_bypass": { "name": "Puri Bypass", "city": "Puri", "type": "highway" },
+    "puri_canal_road": {
+      "name": "Puri Canal Road",
+      "city": "Bhubaneswar",
+      "type": "road"
+    },
+    "puri_ghat_ps": {
+      "name": "Puri Ghat P.S.",
+      "city": "Cuttack",
+      "type": "police_station"
+    },
+    "puri_railway_station": {
+      "name": "Puri Railway Station",
+      "city": "Puri",
+      "type": "railway_station"
+    },
+    "puri_sea_beach": {
+      "name": "Puri Sea Beach",
+      "city": "Puri",
+      "type": "tourist",
+      "famous": true
+    },
+    "pwd_dakabangala": {
+      "name": "PWD Dakabangala",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "raghunathpur": {
+      "name": "Raghunathpur",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "rajarani_temple": {
+      "name": "Rajarani Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "rajdhani_college": {
+      "name": "Rajdhani College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "raj_kishor_marg": {
+      "name": "Raj Kishor Marg",
+      "city": "Cuttack",
+      "type": "road"
+    },
+    "raj_mahal_square": {
+      "name": "Raj Mahal Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "ram_kumarpur": {
+      "name": "Ramkumarpur",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "ram_mandir": {
+      "name": "Ram Mandir",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "ram_mandir_kundhei": {
+      "name": "Ram Mandir Kundhei",
+      "city": "Kakatpur",
+      "type": "religious"
+    },
+    "ramachandi": {
+      "name": "Ramchandi Beach Temple",
+      "city": "Puri",
+      "type": "religious"
+    },
+    "ramachandi_bazar": {
+      "name": "Ramachandi Bazar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "ranihat_durga_mandap": {
+      "name": "Ranihat Durga Mandap",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "rasulgarh": {
+      "name": "Rasulgarh",
+      "city": "Bhubaneswar",
+      "type": "industrial"
+    },
+    "rasulgarh_square": {
+      "name": "Rasulgarh Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "ratilo": { "name": "Ratilo", "city": "Nimapada", "type": "village" },
+    "ratnakar_bagh": {
+      "name": "Ratnakar Bagh",
+      "city": "Bhubaneswar",
+      "type": "park"
+    },
+    "raulapatna": { "name": "Raulapatna", "city": "Konark", "type": "village" },
+    "ravenshaw_university": {
+      "name": "Ravenshaw University",
+      "city": "Cuttack",
+      "type": "educational",
+      "famous": true
+    },
+    "ravi_talkies": {
+      "name": "Ravi Talkies",
+      "city": "Bhubaneswar",
+      "type": "entertainment"
+    },
+    "rd_womens_college": {
+      "name": "RD Women's College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "redcross_road": {
+      "name": "Redcross Road",
+      "city": "Puri",
+      "type": "road"
+    },
+    "regional_science_centre": {
+      "name": "Regional Science Centre",
+      "city": "Bhubaneswar",
+      "type": "museum"
+    },
+    "rental_colony": {
+      "name": "Rental Colony",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "retang_road_square": {
+      "name": "Retang Road Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "ri_paikarapur": {
+      "name": "RI Paikarapur",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "rk_institute": {
+      "name": "R. K. Institute",
+      "city": "Niali",
+      "type": "educational"
+    },
+    "rmc_market": { "name": "RMC Market", "city": "Puri", "type": "market" },
+    "rto_puri": { "name": "RTO Puri", "city": "Puri", "type": "government" },
+    "rupali_square": {
+      "name": "Rupali Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "sadguru_medical": {
+      "name": "Sadguru Medical",
+      "city": "Jagatpur",
+      "type": "hospital"
+    },
+    "saheed_nagar": {
+      "name": "Saheed Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "sai_international_school": {
+      "name": "Sai International School",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "sai_mandir": {
+      "name": "Sai Mandir",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "sakhigopal": { "name": "Sakhigopal", "city": "Puri", "type": "town" },
+    "sakhigopal_block": {
+      "name": "Sakhigopal Block",
+      "city": "Puri",
+      "type": "government"
+    },
+    "sakhigopal_temple": {
+      "name": "Sakhigopal Temple",
+      "city": "Puri",
+      "type": "religious",
+      "famous": true
+    },
+    "salei": { "name": "Salei", "city": "Niali", "type": "village" },
+    "salepur": { "name": "Salepur", "city": "Salepur", "type": "town" },
+    "salepur_market": {
+      "name": "Salepur Market",
+      "city": "Salepur",
+      "type": "market"
+    },
+    "salia_sahi": {
+      "name": "Salia Sahi",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "samajajpur": { "name": "Samjajpur", "city": "Puri", "type": "village" },
+    "samrat_cinema": {
+      "name": "Samrat Cinema",
+      "city": "Cuttack",
+      "type": "entertainment"
+    },
+    "sanatan_harichandan_college": {
+      "name": "Sanatan Harichandan College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "sandhapur": { "name": "Sandhapur", "city": "Cuttack", "type": "village" },
+    "sandhapur_hwc": {
+      "name": "Sandhapur HWC",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "sankareswar": {
+      "name": "Sankareswar",
+      "city": "Konark",
+      "type": "village"
+    },
+    "sanskrit_university": {
+      "name": "Sanskrit University",
+      "city": "Puri",
+      "type": "educational"
+    },
+    "saptasati_temple": {
+      "name": "Saptasati Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "sareda": { "name": "Sareda", "city": "Konark", "type": "village" },
+    "saraswati_shisu_mandir": {
+      "name": "Saraswati Shisu Mandir",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "satabdi_nagar": {
+      "name": "Satabdi Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "satasankha": {
+      "name": "Satasankha",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "sati_choura_square": {
+      "name": "Sati Choura Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "satsangha_vihar": {
+      "name": "Satsangha Vihar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "satya_nagar": {
+      "name": "Satya Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "satya_nagar_square": {
+      "name": "Satya Nagar Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "scb_medical": {
+      "name": "SCB Medical College & Hospital",
+      "city": "Cuttack",
+      "type": "hospital",
+      "coordinates": { "lat": 20.4663, "lon": 85.8786 },
+      "famous": true
+    },
+    "scs_college": {
+      "name": "SCS College",
+      "city": "Puri",
+      "type": "educational"
+    },
+    "sea_beach_police_station": {
+      "name": "Sea Beach Police Station",
+      "city": "Puri",
+      "type": "police_station"
+    },
+    "settlement_office": {
+      "name": "Settlement Office",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "shelter_colony": {
+      "name": "Shelter Colony",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "shifa_hospital": {
+      "name": "Shifa Hospital",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "shikharpur": { "name": "Shikharpur", "city": "Cuttack", "type": "area" },
+    "shree_hari_vihar": {
+      "name": "Shree Hari Vihar",
+      "city": "Puri",
+      "type": "residential"
+    },
+    "shree_hospital": {
+      "name": "Shree Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "shree_mandira": {
+      "name": "Shree Mandira",
+      "city": "Puri",
+      "type": "religious",
+      "famous": true
+    },
+    "shyampur": { "name": "Shyampur", "city": "Bhubaneswar", "type": "area" },
+    "shyamsundarpur": {
+      "name": "Shyamsundarpur",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "sidha_mahavir": {
+      "name": "Sidha Mahavir",
+      "city": "Puri",
+      "type": "religious"
+    },
+    "sijua": { "name": "Sijua", "city": "Bhubaneswar", "type": "area" },
+    "sikaripur": { "name": "Sikaripur", "city": "Cuttack", "type": "area" },
+    "silver_city_boat_club": {
+      "name": "Silver City Boat Club",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "sims_college": {
+      "name": "SIMS College",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "siripur_market": {
+      "name": "Siripur Market",
+      "city": "Bhubaneswar",
+      "type": "market"
+    },
+    "sishu_bhawan": {
+      "name": "Sishu Bhawan Cuttack",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "sisua": { "name": "Sisua", "city": "Adaspur", "type": "village" },
+    "sisua_market": {
+      "name": "Sisua Market",
+      "city": "Salepur",
+      "type": "market"
+    },
+    "sixth_battalion": {
+      "name": "6th Batalion",
+      "city": "Cuttack",
+      "type": "military"
+    },
+    "snowman_logistics": {
+      "name": "Snowman Logistics",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "sog": { "name": "SOG", "city": "Cuttack", "type": "police" },
+    "somepur": { "name": "Somepur", "city": "Cuttack", "type": "village" },
+    "sparsh_hospital": {
+      "name": "Sparsh Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "sriram_market": {
+      "name": "Sriram Market",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "srinivas_gada": {
+      "name": "Srinivas Gada",
+      "city": "Cuttack",
+      "type": "area"
+    },
+    "sriya_square": {
+      "name": "Sriya Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "sri_sri_university": {
+      "name": "Sri Sri University",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "sr_valley": {
+      "name": "SR Valley",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "state_bank_square_cda": {
+      "name": "State Bank Square CDA",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "state_maritime_museum": {
+      "name": "State Maritime Museum",
+      "city": "Cuttack",
+      "type": "museum"
+    },
+    "state_museum": {
+      "name": "State Museum",
+      "city": "Bhubaneswar",
+      "type": "museum"
+    },
+    "state_police_hq": {
+      "name": "State Police Headquarter",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "stpi": {
+      "name": "STPI (Software Technology Park)",
+      "city": "Bhubaneswar",
+      "type": "it_park"
+    },
+    "suando": { "name": "Suando", "city": "Puri", "type": "village" },
+    "subhash_bose_square": {
+      "name": "Subhash Bose Square",
+      "city": "Puri",
+      "type": "major"
+    },
+    "suddhananda_college": {
+      "name": "Suddhananda College",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "sum_hospital": {
+      "name": "Sum Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "sum_hospital_campus_2": {
+      "name": "Sum Hospital Campus-2",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "sundargram": {
+      "name": "Sundargram",
+      "city": "Cuttack",
+      "type": "village"
+    },
+    "sundarpada": {
+      "name": "Sundarpada",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "sundarpada_hata": {
+      "name": "Sundarpada Hata",
+      "city": "Bhubaneswar",
+      "type": "market"
+    },
+    "surya_nagar": {
+      "name": "Surya Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "svnirtar": {
+      "name": "SVNIRTAR Olatpur",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "swami_vivekananda_college": {
+      "name": "Swami Vivekananda College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "swargadwar": {
+      "name": "Swargadwar Beach",
+      "city": "Puri",
+      "type": "tourist"
+    },
+    "synergy_college": {
+      "name": "Synergy College",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "taladanda_bridge": {
+      "name": "Taladanda Bridge",
+      "city": "Cuttack",
+      "type": "landmark"
+    },
+    "talapada": { "name": "Talapada", "city": "Cuttack", "type": "village" },
+    "tamando": { "name": "Tamando", "city": "Bhubaneswar", "type": "area" },
+    "tangi": { "name": "Tangi", "city": "Bhubaneswar", "type": "town" },
+    "tarini_temple_berhampur": {
+      "name": "Tarini Temple Berhampur",
+      "city": "Cuttack",
+      "type": "religious"
+    },
+    "teisipur": { "name": "Teisipur", "city": "Bhubaneswar", "type": "area" },
+    "telenga_pentha": {
+      "name": "Telenga Pentha",
+      "city": "Bhubaneswar",
+      "type": "area"
+    },
+    "three_bn_ndrf": {
+      "name": "3BN NDRF",
+      "city": "Cuttack",
+      "type": "government"
+    },
+    "tikarpada": { "name": "Tikarpada", "city": "Kakatpur", "type": "village" },
+    "tolagopinatha_pur": {
+      "name": "Tolagopinatha Pur",
+      "city": "Niali",
+      "type": "village"
+    },
+    "tonpe_road": { "name": "Tonpe Road", "city": "Cuttack", "type": "road" },
+    "toshali": { "name": "Toshali", "city": "Puri", "type": "commercial" },
+    "town_hall_puri": {
+      "name": "Town Hall",
+      "city": "Puri",
+      "type": "government"
+    },
+    "trinath_bazar": {
+      "name": "Trinath Bazar",
+      "city": "Cuttack",
+      "type": "market"
+    },
+    "trisulia": { "name": "Trisulia", "city": "Cuttack", "type": "area" },
+    "trisulia_bus_stand": {
+      "name": "Trisulia Bus Stand",
+      "city": "Cuttack",
+      "type": "terminal"
+    },
+    "trisulia_square": {
+      "name": "Trisulia Square",
+      "city": "Cuttack",
+      "type": "major"
+    },
+    "tulasi_chaura_chaka": {
+      "name": "Tulasi Chaura Chaka",
+      "city": "Puri",
+      "type": "junction"
+    },
+    "udayanath_college": {
+      "name": "Udayanath College",
+      "city": "Adaspur",
+      "type": "educational"
+    },
+    "unit_1_haat": {
+      "name": "Unit 1 Haat",
+      "city": "Bhubaneswar",
+      "type": "market"
+    },
+    "uphc_khordha": { "name": "UPHC", "city": "Khordha", "type": "hospital" },
+    "urban_market_konark": {
+      "name": "Urban Market",
+      "city": "Konark",
+      "type": "market"
+    },
+    "utkal_heights": {
+      "name": "Utkal Heights",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "utkal_university": {
+      "name": "Utkal University",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "uttara_square": {
+      "name": "Uttara Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "vani_vihar": {
+      "name": "Vani Vihar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "vani_vihar_square": {
+      "name": "Vani Vihar Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "vishnu_vihar": {
+      "name": "Vishnu Vihar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "vivekanand_hospital": {
+      "name": "Vivekanand Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "vss_nagar_road": {
+      "name": "VSS Nagar Road",
+      "city": "Bhubaneswar",
+      "type": "road"
+    },
+    "water_park_puri": {
+      "name": "Water Park",
+      "city": "Puri",
+      "type": "tourist"
+    },
+    "windsor_place": {
+      "name": "Windsor Place",
+      "city": "Cuttack",
+      "type": "residential"
+    },
+    "wonderla_square": {
+      "name": "Wonderla Square",
+      "city": "Khordha",
+      "type": "major"
+    },
+    "wonderla_water_park": {
+      "name": "Wonderla Amusement Park",
+      "city": "Khordha",
+      "type": "tourist",
+      "famous": true
+    },
+    "xavier_college_hotel_mgmt": {
+      "name": "Xavier College of Hotel Management",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "manu_university": {
+      "name": "MANU (Maulana Azad National Urdu University)",
+      "city": "Cuttack",
+      "type": "educational"
+    },
+    "cutm": {
+      "name": "CUTM (Centurion University)",
+      "city": "Jatani",
+      "type": "educational"
+    },
+    "kist_college": {
+      "name": "KIST College",
+      "city": "Jatani",
+      "type": "educational"
+    },
+    "aryan_college": {
+      "name": "Aryan College",
+      "city": "Khordha",
+      "type": "educational"
+    },
+    "oec_college": {
+      "name": "OEC (Orissa Engineering College)",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "xub": {
+      "name": "XUB (Xavier University Bhubaneswar)",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "cet_college": {
+      "name": "CET College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "cipet": { "name": "CIPET", "city": "Bhubaneswar", "type": "educational" },
+    "koustav_college": {
+      "name": "Koustav College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "trident_college": {
+      "name": "TRIDENT College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "silicon_college": {
+      "name": "SILICON College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "ganesh_institute": {
+      "name": "Ganesh Institute",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "dn_wisdom_school": {
+      "name": "D.N. WISDOM School",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "bjeem_school": {
+      "name": "BJEEM School",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "soa_university": {
+      "name": "SOA University",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "c_v_raman_college": {
+      "name": "C.V. Raman College",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "bput": {
+      "name": "BPUT (Biju Patnaik University)",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "imit": { "name": "IMIT", "city": "Bhubaneswar", "type": "educational" },
+    "igit_college": {
+      "name": "IGIT College",
+      "city": "Sarang",
+      "type": "educational"
+    },
+    "jatani_college": {
+      "name": "Jatani College",
+      "city": "Jatani",
+      "type": "educational"
+    },
+    "sophitorium": {
+      "name": "SOPHITORIUM",
+      "city": "Jatani",
+      "type": "commercial"
+    },
+    "royal_habitat": {
+      "name": "Royal Habitat",
+      "city": "Jatani",
+      "type": "residential"
+    },
+    "nandankanan_high_school": {
+      "name": "Nandankanan High School",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "lv_prasad_hospital": {
+      "name": "L.V. Prasad Eye Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "amri_hospital": {
+      "name": "AMRI Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "care_hospital_patia": {
+      "name": "Care Hospital (Patia)",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "utkal_hospital": {
+      "name": "Utkal Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "riverine_hospital": {
+      "name": "Riverine Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "driems": {
+      "name": "DRIEMS Hospital",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "sayeed_memorial": {
+      "name": "Sayeed Memorial Hospital",
+      "city": "Cuttack",
+      "type": "hospital"
+    },
+    "stpi_square": {
+      "name": "STPI Square",
+      "city": "Bhubaneswar",
+      "type": "it_park"
+    },
+    "roti": {
+      "name": "ROTI (Revenue Officers Training Institute)",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "paikara_pur_housing": {
+      "name": "Paikara Pur Housing Colony",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "satya_sai_enclave": {
+      "name": "Satya Sai Enclave",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "jaydev_vatika_square": {
+      "name": "Jaydev Vatika Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "naka_gate": {
+      "name": "Naka Gate",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "royal_lagoon": {
+      "name": "Royal Lagoon",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "duladei_temple": {
+      "name": "Duladei Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "xavier_square": {
+      "name": "Xavier Square",
+      "city": "Bhubaneswar",
+      "type": "major"
+    },
+    "kedar_gouri_temple": {
+      "name": "Kedar Gouri Temple",
+      "city": "Bhubaneswar",
+      "type": "religious"
+    },
+    "esplanade_mall": {
+      "name": "Esplanade One Mall",
+      "city": "Bhubaneswar",
+      "type": "commercial"
+    },
+    "bmw_showroom": {
+      "name": "BMW Showroom",
+      "city": "Bhubaneswar",
+      "type": "commercial"
+    },
+    "forum_mart": {
+      "name": "Forum Mart",
+      "city": "Bhubaneswar",
+      "type": "commercial"
+    },
+    "south_city_mall": {
+      "name": "South City Mall",
+      "city": "Cuttack",
+      "type": "commercial"
+    },
+    "niladri_vihar": {
+      "name": "Niladri Vihar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "ekamra_heights": {
+      "name": "Ekamra Heights",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "forest_park": {
+      "name": "Forest Park",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "sainik_school": {
+      "name": "Sainik School",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "bharat_scouts": {
+      "name": "Bharat Scouts & Guides",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    },
+    "Regional_plant_resource_centre": {
+      "name": "Regional Plant Resource Centre",
+      "city": "Bhubaneswar",
+      "type": "research"
+    },
+    "odisha_state_archive": {
+      "name": "Odisha State Archive",
+      "city": "Bhubaneswar",
+      "type": "government"
+    },
+    "lok_seva_bhawan": {
+      "name": "Lok Seva Bhawan",
+      "city": "Bhubaneswar",
+      "type": "government"
+    },
+    "rajiv_bhawan": {
+      "name": "Rajiv Bhawan",
+      "city": "Bhubaneswar",
+      "type": "government"
+    },
+    "krushi_bhawan": {
+      "name": "Krushi Bhawan",
+      "city": "Bhubaneswar",
+      "type": "government"
+    },
+    "kharavela_nagar": {
+      "name": "Kharavela Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "unit_2": {
+      "name": "Unit 2",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "unit_3": {
+      "name": "Unit 3",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "unit_4": {
+      "name": "Unit 4",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "unit_5": {
+      "name": "Unit 5",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "unit_6": {
+      "name": "Unit 6",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "unit_7": {
+      "name": "Unit 7",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "unit_8": {
+      "name": "Unit 8",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "unit_9": {
+      "name": "Unit 9",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "old_town": { "name": "Old Town", "city": "Bhubaneswar", "type": "area" },
+    "lewis_road": {
+      "name": "Lewis Road",
+      "city": "Bhubaneswar",
+      "type": "road"
+    },
+    "bapuji_nagar": {
+      "name": "Bapuji Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "laxmisagar": {
+      "name": "Laxmisagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "buddha_nagar": {
+      "name": "Buddha Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "jayadev_nagar": {
+      "name": "Jayadev Nagar",
+      "city": "Bhubaneswar",
+      "type": "residential"
+    },
+    "id_market": {
+      "name": "ID Market",
+      "city": "Bhubaneswar",
+      "type": "market"
+    },
+    "sum_hospital_1": {
+      "name": "Sum Hospital Campus-1",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "aditya_care": {
+      "name": "Aditya Care Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "ashwini_hospital": {
+      "name": "Ashwini Hospital",
+      "city": "Bhubaneswar",
+      "type": "hospital"
+    },
+    "oec": {
+      "name": "OEC (Orissa Engineering College)",
+      "city": "Bhubaneswar",
+      "type": "educational"
+    }
+  },
+
+  "routes": {
+    "1-H": {
+      "route_number": "1-H",
+      "route_name": "KIIT Square ↔ Railway Station (Hospital)",
+      "start": "KIIT Square",
+      "end": "Bhubaneswar Railway Station",
+      "distance_km": 12.5,
+      "stops": [
+        "KIIT Square",
+        "KIIT Campus",
+        "KIMS Hospital",
+        "KISS College",
+        "Patia Square",
+        "Damana Square",
+        "Chandrashekharpur",
+        "Saheed Nagar",
+        "Jaydev Vihar",
+        "Vani Vihar Square",
+        "RD Women's College",
+        "Rupali Square",
+        "Maharshi College Square",
+        "Satya Nagar",
+        "Ram Mandir",
+        "Sriya Square",
+        "Master Canteen",
+        "Bhubaneswar Railway Station"
+      ]
+    },
+    "2-H-DOWN": {
+      "route_number": "2-H",
+      "direction": "DOWN",
+      "route_name": "Care Hospital ↔ Khandagiri",
+      "start": "Care Hospital",
+      "end": "Khandagiri",
+      "stops": [
+        "Care Hospital",
+        "Kalinga Hospital Square",
+        "ISKCON Temple",
+        "Jaydev Vihar Square",
+        "Vani Vihar",
+        "Acharya Vihar Square",
+        "IMMT",
+        "Nayapalli",
+        "CRPF Square",
+        "Gopabandhu Nagar",
+        "Fire Station Square",
+        "Rajdhani College",
+        "Baramunda BSABT",
+        "Khandagiri Square"
+      ]
+    },
+    "2-H-UP": {
+      "route_number": "2-H",
+      "direction": "UP",
+      "route_name": "Khandagiri ↔ Care Hospital",
+      "start": "Khandagiri",
+      "end": "Care Hospital",
+      "stops": [
+        "Khandagiri Square",
+        "Baramunda BSABT",
+        "Rajdhani College",
+        "Fire Station Square",
+        "Gopabandhu Nagar",
+        "CRPF Square",
+        "Nayapalli",
+        "IMMT",
+        "Acharya Vihar Square",
+        "Vani Vihar",
+        "Jaydev Vihar Square",
+        "ISKCON Temple",
+        "Kalinga Hospital Square",
+        "Care Hospital"
+      ]
+    },
+    "DD1": {
+      "route_number": "DD1",
+      "route_name": "International Airport ↔ Shree Mandira Parking, Puri",
+      "start": "Biju Patnaik International Airport",
+      "end": "Shree Mandira (Jagannath Temple Parking)",
+      "distance_km": 65,
+      "route_type": "Premium Tourist/Darshan Express",
+      "service": "AC Only",
+      "via": "Kalpana Square, NH-16, Pipili, Direct to Puri",
+      "stops": [
+        "Biju Patnaik International Airport",
+        "New Airport Square",
+        "AG Square",
+        "Kalpana Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Nakhara Square",
+        "Pipili",
+        "Delanga",
+        "Nimapada",
+        "Sakhigopal",
+        "Puri Bus Stand",
+        "Medical Chhak",
+        "Municipality Market Square",
+        "Shree Mandira (Parking)"
+      ],
+      "frequency": "4 trips/day",
+      "first_bus": "06:50",
+      "last_bus": "18:00",
+      "special_features": "Direct connectivity Airport to Jagannath Temple"
+    },
+    "08": {
+      "route_number": "08",
+      "route_name": "IGKC Multispecialty Hospital ↔ Sum Hospital (Campus-2)",
+      "start": "IGKC Multispecialty Hospital",
+      "end": "Sum Hospital Campus-2",
+      "distance_km": 14,
+      "route_type": "Hospital Express",
+      "service": "AC Only",
+      "via": "Sum Hospital-1, ID Market, Jaydev Vihar, Rasulgarh",
+      "stops": [
+        "IGKC Multispecialty Hospital",
+        "ID Market",
+        "Jaydev Vihar Square",
+        "Acharya Vihar Square",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Nakhara Square",
+        "Sum Hospital Campus-1",
+        "Sum Hospital Campus-2"
+      ],
+      "frequency_minutes": 30,
+      "first_bus": "06:15",
+      "last_bus": "18:00"
+    },
+    "09": {
+      "route_number": "09",
+      "route_name": "Bhubaneswar Railway Station ↔ Patia (via Niladri Vihar)",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Patia Square",
+      "distance_km": 18,
+      "via": "AG Square, Jaydev Vihar, Niladri Vihar, KIIT",
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Master Canteen",
+        "Ashok Nagar",
+        "Raj Mahal Square",
+        "Unit 1 Haat",
+        "AG Square",
+        "Governor House Square",
+        "Power House Square",
+        "Saheed Nagar",
+        "Jaydev Vihar Square",
+        "Acharya Vihar Square",
+        "Vani Vihar Square",
+        "Niladri Vihar",
+        "Forest Park",
+        "Ekamra Heights",
+        "Xavier Square",
+        "LV Prasad Eye Hospital",
+        "KIIT Square",
+        "TRIDENT College",
+        "SILICON College",
+        "Care Hospital (Patia)",
+        "Utkal Hospital",
+        "Sai International School",
+        "Royal Lagoon",
+        "Patia Square"
+      ]
+    },
+    "10": {
+      "route_number": "10",
+      "route_name": "Biju Patnaik Airport ↔ MANU University, Cuttack",
+      "start": "Biju Patnaik International Airport",
+      "end": "MANU University",
+      "distance_km": 42,
+      "via": "AG Square, Jaydev Vihar, Nandankanan",
+      "stops": [
+        "Biju Patnaik International Airport",
+        "New Airport Square",
+        "Capital Hospital",
+        "AG Square",
+        "Unit 1 Haat",
+        "Raj Mahal Square",
+        "Kalpana Square",
+        "State Museum",
+        "BJB College",
+        "Rajdhani College",
+        "Baramunda BSABT",
+        "Salia Sahi",
+        "Barang Square",
+        "Barang Police Station",
+        "Trisulia Square",
+        "Nandankanan High School",
+        "Nandankanan",
+        "Madhuban",
+        "Bachhipur",
+        "Kunheipara",
+        "Judicial Academy",
+        "CDA Sector-13",
+        "Netaji Subhash Chhak",
+        "Biju Patnaik Park, Cuttack",
+        "Madhusudan Bridge Square",
+        "MANU University"
+      ]
+    },
+    "11": {
+      "route_number": "11",
+      "route_name": "Railway Station ↔ Nandankanan (Via Jaydev Vihar)",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Nandankanan",
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Master Canteen",
+        "Ashok Nagar",
+        "Raj Mahal Square",
+        "Unit 1 Haat",
+        "AG Square",
+        "Kalpana Square",
+        "State Museum",
+        "BJB College",
+        "Rajdhani College",
+        "Baramunda BSABT",
+        "Raghunathpur",
+        "Salia Sahi",
+        "Barang Square",
+        "Trisulia Square",
+        "Nandankanan High School",
+        "Nandankanan"
+      ]
+    },
+    "12": {
+      "route_number": "12",
+      "route_name": "Railway Station ↔ Nandankanan High School (Via Acharya Vihar)",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Nandankanan High School",
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Master Canteen",
+        "Ashok Nagar",
+        "Raj Mahal Square",
+        "Unit 1 Haat",
+        "AG Square",
+        "Governor House Square",
+        "Saheed Nagar",
+        "Jaydev Vihar Square",
+        "Acharya Vihar Square",
+        "Vani Vihar Square",
+        "Rajdhani College",
+        "Baramunda BSABT",
+        "Salia Sahi",
+        "Barang Square",
+        "Trisulia Square",
+        "Nandankanan High School"
+      ]
+    },
+    "13": {
+      "route_number": "13",
+      "route_name": "Nandankanan ↔ Lingipur (via AG Square)",
+      "start": "Nandankanan",
+      "end": "Lingipur",
+      "distance_km": 28,
+      "via": "Barang, AG Square, Dhauli",
+      "stops": [
+        "Nandankanan",
+        "Nandankanan High School",
+        "Trisulia Square",
+        "Barang Square",
+        "Salia Sahi",
+        "Raghunathpur",
+        "Baramunda BSABT",
+        "Rajdhani College",
+        "BJB College",
+        "State Museum",
+        "Kalpana Square",
+        "Raj Mahal Square",
+        "Unit 1 Haat",
+        "AG Square",
+        "Capital Hospital",
+        "New Airport Square",
+        "Biju Patnaik Airport",
+        "Duladei Temple",
+        "Uttara Square",
+        "CIFA Gate",
+        "Pipili Bypass",
+        "Dhauli Square",
+        "Lingipur"
+      ]
+    },
+    "14": {
+      "route_number": "14",
+      "route_name": "NISER ↔ Railway Station",
+      "start": "NISER",
+      "end": "Bhubaneswar Railway Station",
+      "stops": [
+        "NISER",
+        "Jatni",
+        "Khordha",
+        "Barunei Hill",
+        "Sundarpada",
+        "Khandagiri",
+        "Baramunda BSABT",
+        "Rajdhani College",
+        "Fire Station Square",
+        "Nayapalli",
+        "Acharya Vihar Square",
+        "Vani Vihar Square",
+        "Satya Nagar",
+        "Ram Mandir",
+        "Master Canteen",
+        "Bhubaneswar Railway Station"
+      ]
+    },
+    "15": {
+      "route_number": "15",
+      "route_name": "Mancheswar ↔ Khandagiri",
+      "start": "Mancheswar",
+      "end": "Khandagiri",
+      "stops": [
+        "Mancheswar",
+        "Rasulgarh",
+        "Bomikhal",
+        "Vani Vihar Square",
+        "Acharya Vihar Square",
+        "IMMT",
+        "Nayapalli",
+        "CRPF Square",
+        "Fire Station Square",
+        "Rajdhani College",
+        "Baramunda BSABT",
+        "Khandagiri"
+      ]
+    },
+    "16": {
+      "route_number": "16",
+      "route_name": "Chandrasekharpur ↔ Railway Station",
+      "start": "Chandrasekharpur",
+      "end": "Bhubaneswar Railway Station",
+      "stops": [
+        "Chandrasekharpur",
+        "Patia",
+        "Vani Vihar",
+        "Jaydev Vihar",
+        "Saheed Nagar",
+        "Power House Square",
+        "Governor House Square",
+        "AG Square",
+        "Unit 1 Haat",
+        "Raj Mahal Square",
+        "Ashok Nagar",
+        "Master Canteen",
+        "Bhubaneswar Railway Station"
+      ]
+    },
+    "17": {
+      "route_number": "17",
+      "route_name": "Kalinga Hospital ↔ Baramunda",
+      "start": "Kalinga Hospital",
+      "end": "Baramunda BSABT",
+      "stops": [
+        "Kalinga Hospital Square",
+        "Jaydev Vihar Square",
+        "Vani Vihar",
+        "Acharya Vihar Square",
+        "IMMT",
+        "Nayapalli",
+        "CRPF Square",
+        "Fire Station Square",
+        "Rajdhani College",
+        "Baramunda BSABT"
+      ]
+    },
+    "18": {
+      "route_number": "18",
+      "route_name": "Airport ↔ Railway Station",
+      "start": "Biju Patnaik Airport",
+      "end": "Bhubaneswar Railway Station",
+      "stops": [
+        "Biju Patnaik Airport",
+        "New Airport Square",
+        "Old Airport Square",
+        "Naveen Nivas",
+        "AG Square",
+        "Unit 1 Haat",
+        "Raj Mahal Square",
+        "Ashok Nagar",
+        "Master Canteen",
+        "Bhubaneswar Railway Station"
+      ]
+    },
+    "19": {
+      "route_number": "19",
+      "route_name": "Bhubaneswar ↔ Cuttack via NH",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Cuttack Railway Station",
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Master Canteen",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Hi-Tech Hospital Square",
+        "Nakhara Square",
+        "Bamphakuda",
+        "Telenga Pentha",
+        "Delta Gada",
+        "Pratap Nagari",
+        "Bhanpur",
+        "Balikuda",
+        "Gopalpur Railway Station",
+        "Khapuria Square",
+        "Link Road",
+        "Nishamani Talkies",
+        "Samrat Cinema",
+        "OMP Square",
+        "Cuttack Railway Station"
+      ]
+    },
+    "20": {
+      "route_number": "20",
+      "route_name": "Lingaraj Temple ↔ Dhauli",
+      "start": "Lingaraj Temple",
+      "end": "Dhauli Square",
+      "stops": [
+        "Lingaraj Temple",
+        "Bindusagar",
+        "Ram Mandir",
+        "Bhubaneswar Railway Station",
+        "Master Canteen",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Hi-Tech Hospital Square",
+        "Hanspal Square",
+        "Lingipur",
+        "Dhauli Square"
+      ]
+    },
+    "21": {
+      "route_number": "21",
+      "route_name": "Patia ↔ Baramunda via KIIT",
+      "start": "Patia",
+      "end": "Baramunda BSABT",
+      "stops": [
+        "Patia Square",
+        "KIIT Square",
+        "KIIT Campus",
+        "Chandrashekharpur",
+        "Saheed Nagar",
+        "Jaydev Vihar",
+        "Vani Vihar Square",
+        "Acharya Vihar Square",
+        "IMMT",
+        "Nayapalli",
+        "CRPF Square",
+        "Fire Station Square",
+        "Rajdhani College",
+        "Baramunda BSABT"
+      ]
+    },
+    "22": {
+      "route_number": "22",
+      "route_name": "Sum Hospital ↔ Railway Station",
+      "start": "Sum Hospital",
+      "end": "Bhubaneswar Railway Station",
+      "stops": [
+        "Sum Hospital",
+        "Ghatikia",
+        "Kalpana Square",
+        "Raj Mahal Square",
+        "Ashok Nagar",
+        "Master Canteen",
+        "Bhubaneswar Railway Station"
+      ]
+    },
+    "22B": {
+      "route_number": "22B",
+      "route_name": "Jatani Gate ↔ Khordha New Bus Stand",
+      "start": "Jatani Gate",
+      "end": "Khordha New Bus Stand",
+      "distance_km": 15,
+      "via": "Jatani, CUTM, KIST College",
+      "stops": [
+        "Jatani Gate",
+        "Khajasuni Temple",
+        "Ogalapada",
+        "Janla Medical",
+        "Janla Post Office",
+        "Jatani College",
+        "CUTM (Centurion University)",
+        "KIST College",
+        "SOPHITORIUM",
+        "Royal Habitat",
+        "Aryan College",
+        "Barunei Hill",
+        "Sundarpada",
+        "Khordha Bypass Square",
+        "Wonderla Square",
+        "PN College",
+        "Khordha New Bus Stand"
+      ]
+    },
+    "24": {
+      "route_number": "24",
+      "route_name": "Kalinga Vihar ↔ Sai Temple (Ranga Bazar)",
+      "start": "Kalinga Vihar Square",
+      "end": "Sai Mandir",
+      "distance_km": 12,
+      "via": "Paikara Pur, Jaydev Vatika",
+      "stops": [
+        "Kalinga Vihar Square",
+        "Tamando",
+        "Paikara Pur Housing Colony",
+        "RI Paikarapur",
+        "Satya Sai Enclave",
+        "Malipada",
+        "Nuagan Square",
+        "Jaydev Vatika Square",
+        "Naka Gate",
+        "Sum Hospital",
+        "Shyampur",
+        "Ayurveda College",
+        "Kalinga Studio Square",
+        "Sai Mandir"
+      ]
+    },
+    "31": {
+      "route_number": "31",
+      "route_name": "Bhubaneswar ↔ Puri",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Puri Bus Stand",
+      "distance_km": 60,
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Master Canteen",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Saptasati Temple",
+        "Hi-Tech Hospital Square",
+        "Hanspal Square",
+        "Puri Canal Road",
+        "Highway Honda",
+        "Utkal Heights",
+        "Millenium City",
+        "Pahal",
+        "Apex College",
+        "Nakhara Square",
+        "Bamphakuda",
+        "Telenga Pentha",
+        "Delta Gada",
+        "Bhanpur",
+        "Balikuda",
+        "Gopalpur Railway Station",
+        "Khapuria Square",
+        "Link Road",
+        "Pipili",
+        "Delanga",
+        "Balanga",
+        "Nimapada",
+        "Sakhigopal",
+        "Chandanpur",
+        "Puri Bus Stand"
+      ]
+    },
+    "33": {
+      "route_number": "33",
+      "route_name": "Bhubaneswar ↔ Konark",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Konark Sun Temple",
+      "distance_km": 65,
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Hi-Tech Hospital Square",
+        "Nakhara Square",
+        "Pipili",
+        "Nimapada",
+        "GOP",
+        "Konark Sun Temple"
+      ]
+    },
+    "34": {
+      "route_number": "34",
+      "route_name": "Baramunda ↔ Khordha",
+      "start": "Baramunda BSABT",
+      "end": "Khordha New Bus Stand",
+      "stops": [
+        "Baramunda BSABT",
+        "Khandagiri",
+        "Sundarpada",
+        "Barunei Hill",
+        "Khordha New Bus Stand"
+      ]
+    },
+    "35": {
+      "route_number": "35",
+      "route_name": "Baramunda ↔ Balugaon",
+      "start": "Baramunda BSABT",
+      "end": "Balugaon",
+      "stops": [
+        "Baramunda BSABT",
+        "Khandagiri",
+        "Khordha",
+        "Chilika",
+        "Balugaon"
+      ]
+    },
+    "38": {
+      "route_number": "38",
+      "route_name": "Rasulgarh ↔ Cuttack",
+      "start": "Rasulgarh",
+      "end": "Badambadi Bus Stand",
+      "stops": [
+        "Rasulgarh Square",
+        "Palasuni",
+        "Hi-Tech Hospital Square",
+        "Nakhara Square",
+        "Telenga Pentha",
+        "Delta Gada",
+        "Bhanpur",
+        "Gopalpur Railway Station",
+        "Link Road",
+        "Nishamani Talkies",
+        "Badambadi Bus Stand"
+      ]
+    },
+    "39": {
+      "route_number": "39",
+      "route_name": "Chandaka ↔ Railway Station",
+      "start": "Chandaka",
+      "end": "Bhubaneswar Railway Station",
+      "stops": [
+        "Chandaka",
+        "Patia",
+        "Saheed Nagar",
+        "Jaydev Vihar",
+        "Vani Vihar Square",
+        "Satya Nagar",
+        "Ram Mandir",
+        "Master Canteen",
+        "Bhubaneswar Railway Station"
+      ]
+    },
+    "45": {
+      "route_number": "45",
+      "route_name": "Damana ↔ Khandagiri",
+      "start": "Damana Square",
+      "end": "Khandagiri",
+      "stops": [
+        "Damana Square",
+        "Patia",
+        "Jaydev Vihar",
+        "Vani Vihar Square",
+        "Acharya Vihar Square",
+        "IMMT",
+        "Nayapalli",
+        "CRPF Square",
+        "Baramunda BSABT",
+        "Khandagiri"
+      ]
+    },
+    "49": {
+      "route_number": "49",
+      "route_name": "Nayapalli ↔ Puri",
+      "start": "Nayapalli",
+      "end": "Puri Bus Stand",
+      "stops": [
+        "Nayapalli",
+        "Acharya Vihar Square",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Hi-Tech Hospital Square",
+        "Nakhara Square",
+        "Telenga Pentha",
+        "Pipili",
+        "Nimapada",
+        "Sakhigopal",
+        "Puri Bus Stand"
+      ]
+    },
+    "50": {
+      "route_number": "50",
+      "route_name": "Baramunda ↔ Tangi",
+      "start": "Baramunda BSABT",
+      "end": "Tangi",
+      "stops": [
+        "Baramunda BSABT",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Jharpada",
+        "Tangi"
+      ]
+    },
+    "56": {
+      "route_number": "56",
+      "route_name": "Badambadi ↔ Bhubaneswar via Choudwar",
+      "start": "Badambadi Bus Stand",
+      "end": "Bhubaneswar Railway Station",
+      "stops": [
+        "Badambadi Bus Stand",
+        "Pala Mandap",
+        "Link Road",
+        "Choudwar",
+        "Nakhara Square",
+        "Rasulgarh Square",
+        "Vani Vihar Square",
+        "Master Canteen",
+        "Bhubaneswar Railway Station"
+      ]
+    },
+    "58": {
+      "route_number": "58",
+      "route_name": "Jagatpur ↔ Puri Bus Stand",
+      "start": "Jagatpur",
+      "end": "Puri Bus Stand",
+      "via": "Link Road, Nakhara, Puri Bypass",
+      "stops": [
+        "Jagatpur",
+        "Shikharpur",
+        "Gandarpur",
+        "OMP Square",
+        "Samrat Cinema",
+        "Link Road",
+        "Nishamani Talkies",
+        "Arundoya Market",
+        "Pala Mandap",
+        "Badambadi Bus Stand",
+        "Badambadi Square",
+        "Gopalpur Railway Station",
+        "Khapuria Square",
+        "Link Road",
+        "Bhanpur",
+        "Pratap Nagari",
+        "Delta Gada",
+        "Telenga Pentha",
+        "Bamphakuda",
+        "Nakhara Square",
+        "Apex College",
+        "Pahal",
+        "Millenium City",
+        "Utkal Heights",
+        "Highway Honda",
+        "Puri Canal Road",
+        "Hanspal Square",
+        "Hi-Tech Hospital Square",
+        "Saptasati Temple",
+        "Palasuni",
+        "Pipili",
+        "Sakhigopal",
+        "Chandanpur",
+        "Puri Bus Stand"
+      ]
+    },
+    "59": {
+      "route_number": "59",
+      "route_name": "Puri Bus Stand ↔ Mahanadi Vihar, Cuttack",
+      "start": "Puri Bus Stand",
+      "end": "Mahanadi Vihar",
+      "via": "Puri Bypass, Nakhara, Link Road",
+      "stops": [
+        "Puri Bus Stand",
+        "Matiapada Square",
+        "Athara Nala",
+        "Bata Mangala Temple",
+        "Biraharekrushnapur",
+        "Malatipatpur",
+        "Tulasi Chaura Chaka",
+        "Chandanpur Bazar",
+        "Damodarpur Bazar",
+        "Birapratap Pur",
+        "Chandanpur Bypass",
+        "Sakhigopal",
+        "Pipili Bypass",
+        "Pipili",
+        "CIFA",
+        "Uttara Square",
+        "Bali Sahi",
+        "Dhauli Square",
+        "Lingipur",
+        "Sai Mandir",
+        "SR Valley",
+        "Mangraj Point Kesora",
+        "Pandra",
+        "Puri Bypass",
+        "Hi-Tech Hospital Square",
+        "Highway Honda",
+        "Telenga Pentha",
+        "Bhanpur",
+        "Gopalpur Railway Station",
+        "Link Road",
+        "Kaliaboda Temple",
+        "Mahanadi Vihar"
+      ]
+    },
+    "62": {
+      "route_number": "62",
+      "route_name": "Railway Station ↔ Suando (Gopabandhu Janmapitha)",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Gopabandhu Janmapitha",
+      "via": "Kalpana Square, Pipili Bypass",
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Kalpana Square",
+        "Teisipur",
+        "Satasankha",
+        "Pattanaikia",
+        "Pipili Bypass",
+        "Brahmanasahi",
+        "Munida",
+        "Kusameswar",
+        "Balapur",
+        "Suando",
+        "Gopabandhu Janmapitha"
+      ]
+    },
+    "63": {
+      "route_number": "63",
+      "route_name": "Baramunda BSABT ↔ Madhabananda Temple, Niali",
+      "start": "Baramunda BSABT",
+      "end": "Madhabananda Temple",
+      "distance_km": 70,
+      "via": "Vani Vihar, Rasulgarh, Nakhara, Adaspur",
+      "stops": [
+        "Baramunda BSABT",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Nakhara Square",
+        "DPS Kalinga",
+        "Synergy College",
+        "Midland Height",
+        "Trinath Bazar",
+        "Pachabati Bazar",
+        "Bateswar Mahadev Temple",
+        "Bhabani Nagar Phase-II",
+        "Brahmani Jharilo",
+        "Kuranga",
+        "Ocean Water Park",
+        "Snowman Logistics",
+        "Sundargram",
+        "Kantapada",
+        "Olatpur",
+        "Sisua",
+        "Ichhapur",
+        "Barahipur",
+        "Adaspur Bus Stand",
+        "Adaspur Hospital",
+        "Udayanath College",
+        "Salei",
+        "Kaliaghai Market",
+        "Apuja",
+        "Nuagaon",
+        "Niali College",
+        "Niali High School",
+        "Niali P.S",
+        "Fire Station Niali",
+        "Madhabananda Temple"
+      ]
+    },
+    "64": {
+      "route_number": "64",
+      "route_name": "Railway Station ↔ Jatani Gate",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Jatani Gate",
+      "via": "Vani Vihar, Baramunda, IT Corridor",
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Vani Vihar Square",
+        "Baramunda BSABT",
+        "Gohiria Square",
+        "Madanpur",
+        "Swami Vivekananda College",
+        "Durgapur",
+        "Infovalley P.S",
+        "Infosys II",
+        "Bagchi Sri Shankara Hospital",
+        "Amrita Vidyalayam",
+        "Jatani Gate"
+      ]
+    },
+    "65": {
+      "route_number": "65",
+      "route_name": "Railway Station ↔ Wonderla Water Park",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Wonderla Water Park",
+      "via": "Vani Vihar, Khordha",
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Vani Vihar Square",
+        "Kumbharbasta Square",
+        "Wonderla Square",
+        "Wonderla Water Park",
+        "Khordha Bypass Square",
+        "PN College",
+        "Khordha New Bus Stand"
+      ]
+    },
+    "66": {
+      "route_number": "66",
+      "route_name": "Airport ↔ Pathargadia Square",
+      "start": "Biju Patnaik Airport",
+      "end": "Pathargadia Square",
+      "via": "KIIT Square, Damana Square",
+      "stops": [
+        "Biju Patnaik Airport",
+        "Gadakana Depot",
+        "Railway Market",
+        "Kendriya Vidyalaya No.3",
+        "Kelucharan Park",
+        "Damana Square",
+        "Chandrashekharpur P.S.",
+        "Patia Square",
+        "Koel Campus",
+        "KIIT Square",
+        "KIIT Campus",
+        "KIMS Hospital",
+        "KISS College",
+        "Nilachal Nagar",
+        "Pathargadia Square"
+      ]
+    },
+    "70": {
+      "route_number": "70",
+      "route_name": "Railway Station ↔ Konark (Sun Temple)",
+      "start": "Bhubaneswar Railway Station",
+      "end": "Konark",
+      "distance_km": 65,
+      "via": "Uttara Sq., Nimapada, GOP",
+      "stops": [
+        "Bhubaneswar Railway Station",
+        "Vani Vihar Square",
+        "Rasulgarh Square",
+        "Uttara Square",
+        "CIFA Gate",
+        "KEC College",
+        "Hi-Tech Heaven",
+        "Pipili Bypass",
+        "Pipili Over Bridge Sq.",
+        "Haripur",
+        "Kajipatna",
+        "Ratilo",
+        "Nimapada Bus Stand",
+        "Nimapada Women College",
+        "Nimapada Old Bus Stand",
+        "Gulgula Chhak",
+        "Dighalo",
+        "GOP Market",
+        "GOP P.S.",
+        "Begunia",
+        "Sareda",
+        "Junei",
+        "Madipur Chhak",
+        "Konark P.S.",
+        "Sun Temple",
+        "Konark"
+      ]
+    },
+    "71": {
+      "route_number": "71",
+      "route_name": "Baramunda BSABT ↔ Konark",
+      "start": "Baramunda BSABT",
+      "end": "Konark",
+      "via": "Kalpana, Rasulgarh, Nimapada, GOP",
+      "stops": [
+        "Baramunda BSABT",
+        "Kalpana Square",
+        "Rasulgarh Square",
+        "Uttara Square",
+        "Pipili",
+        "Nimapada",
+        "GOP",
+        "Konark"
+      ]
+    },
+    "73": {
+      "route_number": "73",
+      "route_name": "Puri Bus Stand ↔ Jagannath Medical College",
+      "start": "Puri Bus Stand",
+      "end": "Jagannath Medical College",
+      "via": "Medical Chhak, SCS College",
+      "stops": [
+        "Puri Bus Stand",
+        "Police Line",
+        "Jhadeswari Square",
+        "PKDA",
+        "SCS College",
+        "Town Hall",
+        "Sea Beach Police Station",
+        "Collector Office",
+        "Subhash Bose Square",
+        "BNR Hotel",
+        "RTO Puri",
+        "Bedi Hanuman",
+        "Jagannath Stadium",
+        "GM Law College",
+        "Sanskrit University",
+        "Govt I.T.I College Square",
+        "Bank Colony",
+        "Grid Station",
+        "Bali Guhali",
+        "Nagapatana",
+        "Jagannath Medical College"
+      ]
+    },
+    "74": {
+      "route_number": "74",
+      "route_name": "Shree Mandira ↔ Puri Railway Station",
+      "start": "Shree Mandira",
+      "end": "Puri Railway Station",
+      "via": "Redcross Road, Puri Bus Stand",
+      "stops": [
+        "Shree Mandira",
+        "Municipality Market Sqr.",
+        "Medical Chhak",
+        "Redcross Road",
+        "Bholanath Vidyapith",
+        "Puri Bus Stand",
+        "Matiapada Square",
+        "Police High School",
+        "Puri Railway Station"
+      ]
+    },
+    "75": {
+      "route_number": "75",
+      "route_name": "Shree Mandira ↔ Kakatpur",
+      "start": "Shree Mandira",
+      "end": "Old Bus Stand, Kakatpur",
+      "distance_km": 75,
+      "via": "Puri Bus Stand, Balighai, Marine Drive, Konark",
+      "stops": [
+        "Shree Mandira",
+        "Municipality Market Sqr.",
+        "Puri Bus Stand",
+        "Sidha Mahavir",
+        "Balighat",
+        "Grid Station",
+        "C.P.S Puri",
+        "BBSR Bypass",
+        "Toshali",
+        "Beladala",
+        "Water Park",
+        "Balighai",
+        "Ghanashyam Hemalata College",
+        "DRDO",
+        "District Jail Puri",
+        "Bali Kapileswar",
+        "Ramchandi",
+        "Lotous Resort",
+        "Chandrabhaga Beach",
+        "Urban Market",
+        "Konark",
+        "Raulapatna",
+        "Badhai Chaka",
+        "Kurujang",
+        "Jamara",
+        "Balidokan",
+        "Indira Bazar",
+        "Tikarpada",
+        "Gopabandhu Chaka",
+        "Asijanga",
+        "Ananda Bazar",
+        "Chena Chaka",
+        "Sankareswar",
+        "Ram Mandir Kundhei",
+        "Kundhei Hata",
+        "Chotrapur",
+        "Bali Sahi",
+        "Haridaspur",
+        "Chanapur",
+        "Patapur",
+        "Othaka Hata",
+        "Balara",
+        "Block Chaka",
+        "Kakatpur New Bus Stand",
+        "College Chaka",
+        "Old Bus Stand Kakatpur"
+      ]
+    },
+    "76": {
+      "route_number": "76",
+      "route_name": "Puri Bus Stand ↔ Sakhigopal Temple",
+      "start": "Puri Bus Stand",
+      "end": "Sakhigopal Temple",
+      "via": "Medical Chhak, Athara Nala, Malatipatpur",
+      "stops": [
+        "Puri Bus Stand",
+        "Bholanath Vidyapith",
+        "Redcross Road",
+        "Medical Chhak",
+        "Kumbharpada P.S",
+        "Athara Nala",
+        "Mukunda Mishra Nagar",
+        "Kadali Bari",
+        "Shree Hari Vihar",
+        "Bata Mangala Temple",
+        "Biraharekrushnapur",
+        "Bata Gaon",
+        "Charishree Road",
+        "Malatipatpur",
+        "Tulasi Chaura Chaka",
+        "Chandanpur Bazar",
+        "Damodarpur Bazar",
+        "Birapratap Pur Bazar",
+        "Birapratap Pur",
+        "Chandanpur Bypass",
+        "Samjajpur",
+        "Biragobinda Pur",
+        "Sakhigopal Block",
+        "Sakhigopal",
+        "RMC Market",
+        "Narendra Pond",
+        "Sakhigopal Temple"
+      ]
+    },
+    "77": {
+      "route_number": "77",
+      "route_name": "Puri Bus Stand ↔ Nimapada Bus Stand",
+      "start": "Puri Bus Stand",
+      "end": "Nimapada Bus Stand",
+      "via": "Balighai, Marine Drive, Konark, GOP",
+      "stops": [
+        "Puri Bus Stand",
+        "Matiapada Square",
+        "Sidha Mahavir",
+        "Balighat",
+        "Grid Station",
+        "C.P.S Puri",
+        "BBSR Bypass",
+        "Toshali",
+        "Beladala",
+        "Water Park",
+        "Balighai",
+        "Ghanashyam Hemalata College",
+        "DRDO",
+        "District Jail Puri",
+        "Bali Kapileswar",
+        "Ramchandi",
+        "Lotous Resort",
+        "Chandrabhaga Beach",
+        "Urban Market",
+        "Konark",
+        "Konark P.S.",
+        "Madipur Chhak",
+        "Junei",
+        "Sareda",
+        "Begunia",
+        "GOP P.S.",
+        "GOP Market",
+        "Dighalo",
+        "Gulgula Chhak",
+        "Nimapada Old Bus Stand",
+        "Jayshree Chhak",
+        "Nimapada Women College",
+        "Nimapada Bus Stand"
+      ]
+    },
+    "80": {
+      "route_number": "80",
+      "route_name": "Agrahat, Charbatia ↔ Police Out Post, Naraj",
+      "start": "Agrahat",
+      "end": "Police Out Post, Naraj",
+      "distance_km": 45,
+      "via": "Choudwar, SCB, Cuttack Rly. Stn., CNBT, CDA",
+      "stops": [
+        "Agrahat",
+        "Charbatia",
+        "Choudwar Jail",
+        "IMFA Gate 12",
+        "Kalinga Bazar",
+        "Choudwar P.S",
+        "Gandhi Chaka",
+        "Municipality Office Choudwar",
+        "Kali Mandir Choudwar",
+        "Birupa Anicut",
+        "Birupa Vihar Sq.",
+        "Laxmanpur",
+        "SAI (Sports Authority India)",
+        "Pandasahi Road",
+        "Sikaripur",
+        "Jobra Anicut",
+        "Settlement Office",
+        "SCB Medical",
+        "Balaji Hospital",
+        "Ranihat Durga Mandap",
+        "Ravenshaw University",
+        "Cuttack Railway Station",
+        "OMP Square",
+        "Samrat Cinema",
+        "Link Road",
+        "Nishamani Talkies",
+        "Arundoya Market",
+        "Pala Mandap",
+        "Badambadi Bus Stand",
+        "Badambadi Square",
+        "CNBT",
+        "City College Cuttack",
+        "Puri Ghat P.S.",
+        "Cuttack Sai Temple",
+        "High Court Road",
+        "Sishu Bhawan Cuttack",
+        "Judicial Academy",
+        "Dagarpada Road",
+        "Sati Choura Sq.",
+        "Eye Hospital Sq.",
+        "CDA 6 Park",
+        "CDA 9 Market Sq.",
+        "CDA Sector 9",
+        "Drug Controller Office",
+        "Shelter Colony",
+        "SIMS College",
+        "State Bank Sq. CDA",
+        "Biju Patnaik Park Cuttack",
+        "Netaji Subhash Chhak",
+        "CDA Sector-13",
+        "Ravenshaw University (Mahanadi Campus)",
+        "NLU",
+        "Police Out Post Naraj"
+      ]
+    },
+    "81": {
+      "route_number": "81",
+      "route_name": "Barabati Stadium ↔ Jagannath Temple, Salepur",
+      "start": "Barabati Stadium",
+      "end": "Jagannath Temple Salepur",
+      "distance_km": 38,
+      "via": "SCB Medical, Jagatpur",
+      "stops": [
+        "Barabati Stadium",
+        "NCC CSD Canteen",
+        "OPSC",
+        "State Police Headquarter",
+        "Cantonment Road",
+        "Maachhua Bazar",
+        "Matamatha",
+        "Professors Colony",
+        "Bose College",
+        "State Maritime Museum",
+        "Taladanda Bridge",
+        "Jobra Anicut",
+        "Settlement Office",
+        "SCB Medical",
+        "Balaji Hospital",
+        "Ranihat Durga Mandap",
+        "Ravenshaw University",
+        "Cuttack Railway Station",
+        "OMP Square",
+        "Gandarpur",
+        "Shikharpur",
+        "Jagatpur",
+        "Jagatpur P.S",
+        "Sadguru Medical",
+        "IPICOL Square",
+        "Khaira Bridge",
+        "Imam Nagar",
+        "Gunjarpur",
+        "Peer Bazar",
+        "Champati Road",
+        "Bhairpur",
+        "E-Kart Logistic Hub",
+        "Padamapur",
+        "Padamapur UPHC",
+        "Kazi Bazar",
+        "Laxmi Nrusingha Bazar",
+        "Mahajanpur",
+        "Paga Chhaka",
+        "Bahugram",
+        "Kharakhia",
+        "Kharakhia Market",
+        "Bhatapada",
+        "Nandolgada",
+        "Nalia Munha",
+        "Bahabalpur",
+        "Sisua Market",
+        "Balisahi",
+        "Machuati",
+        "Salepur Market",
+        "Salepur",
+        "Jagannath Temple Salepur"
+      ]
+    },
+    "82": {
+      "route_number": "82",
+      "route_name": "Biju Patnaik Int. Airport ↔ SCB Medical, Cuttack",
+      "start": "Biju Patnaik Int. Airport",
+      "end": "Settlement Office (SCB Medical)",
+      "distance_km": 35,
+      "via": "Link Road, Nakhara, Vani Vihar",
+      "stops": [
+        "Biju Patnaik Int. Airport",
+        "New Airport Square",
+        "Capital Hospital",
+        "AG Square",
+        "Unit 1 Haat",
+        "Raj Mahal Square",
+        "Ashok Nagar",
+        "Master Canteen",
+        "Bhubaneswar Railway Station",
+        "Sriya Square",
+        "Satya Nagar Square",
+        "Maharshi College Square",
+        "Rupali Square",
+        "RD Womens College",
+        "Vani Vihar Square",
+        "VSS Nagar Road",
+        "Satsangha Vihar",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Saptasati Temple",
+        "Hi-Tech Hospital Square",
+        "Hanspal Square",
+        "Puri Canal Road",
+        "Highway Honda",
+        "Utkal Heights",
+        "Millenium City",
+        "Pahal",
+        "Apex College",
+        "Sum Hospital Campus-2",
+        "Nakhara Square",
+        "Bamphakuda",
+        "Telenga Pentha",
+        "Settlement Office"
+      ]
+    },
+    "83": {
+      "route_number": "83",
+      "route_name": "Kandarpur ↔ Dhabaleswar, Cuttack",
+      "start": "Kandarpur",
+      "end": "Dhabaleswar",
+      "distance_km": 40,
+      "via": "CDA, CNBT, 42 Mouza",
+      "stops": [
+        "Kandarpur",
+        "Kandarpur College",
+        "Athanga",
+        "Chanduli Bridge",
+        "Baral Laxminarayan Temple",
+        "Nilakantha Nath Road",
+        "Baral",
+        "Kulakalapada",
+        "Kulasarichuan",
+        "Kalapada Market",
+        "Deuli",
+        "Dahi Gaon",
+        "Govindpur Market",
+        "Kantunia",
+        "Bentakar",
+        "Dadhibamanpur",
+        "Sriram Market",
+        "Tarini Temple Berhampur",
+        "Berhampur",
+        "Jhinkiria",
+        "Bali Sahi",
+        "Ghatakula",
+        "Industrial Estate Road",
+        "Govt. ITI Cuttack",
+        "Khapuria Sq.",
+        "Link Road",
+        "Nishamani Talkies",
+        "Arundoya Market",
+        "Pala Mandap",
+        "Badambadi Bus Stand",
+        "Badambadi Sq.",
+        "CNBT",
+        "City College Cuttack",
+        "Puri Ghat P.S.",
+        "Cuttack Sai Temple",
+        "High Court Road",
+        "Sishu Bhawan Cuttack",
+        "Judicial Academy",
+        "Vdagarpada Road",
+        "Sati Choura Sq.",
+        "Eye Hospital Sq.",
+        "Windsor Place",
+        "CDA Govt Hospital",
+        "IPSAR",
+        "CESU CDA 9 Road",
+        "ICAI Bhawan",
+        "Tonpe Road",
+        "Justice Sq.",
+        "State Bank Square CDA",
+        "Biju Patnaik Park Cuttack",
+        "Madhusudan Bridge Sq.",
+        "Nuapatana Road",
+        "Dhabaleswar Temple Rd.",
+        "Dhabaleswar"
+      ]
+    },
+    "84": {
+      "route_number": "84",
+      "route_name": "Markatnagar, CDA 7 ↔ Madhabananda Temple, Niali",
+      "start": "Markatnagar CDA 7",
+      "end": "Madhabananda Temple",
+      "distance_km": 75,
+      "via": "CNBT, Badambadi, Linkroad, Nakhara, SVNIRTAR, Olatpur",
+      "stops": [
+        "Markatnagar CDA 7",
+        "CDA 6 Park",
+        "Eye Hospital Square",
+        "Sati Choura Square",
+        "Dagarpada Road",
+        "Judicial Academy",
+        "Sishu Bhawan Cuttack",
+        "High Court Road",
+        "Cuttack Sai Temple",
+        "Puri Ghat P.S.",
+        "City College Cuttack",
+        "Khannagar Traffic",
+        "CNBT",
+        "Badambadi Square",
+        "Badambadi Bus Stand",
+        "Pala Mandap",
+        "Arundoya Market",
+        "Nishamani Talkies",
+        "Link Road",
+        "Khapuria Square",
+        "Gopalpur Railway Station",
+        "Balikuda",
+        "Bhanpur",
+        "Pratap Nagari",
+        "Delta Gada",
+        "Telenga Pentha",
+        "Bamphakuda",
+        "Nakhara Square",
+        "DPS Kalinga",
+        "Synergy College",
+        "Midland Height",
+        "Jaypur Road",
+        "East College",
+        "Trinath Bazar",
+        "Pachabati Bazar",
+        "Bateswar Mahadev Temple",
+        "Bhabani Nagar Phase-II",
+        "Brahmani Jharilo",
+        "Police Aid Brahmani Jharilo",
+        "Kuranga",
+        "Suddhananda Collge",
+        "Ocean Water Park",
+        "Snowman Logistics",
+        "Bada Jharilo",
+        "Sundargram",
+        "Dadhichi Group",
+        "Bagalpur Panchyat Office",
+        "Dakhineswar Mahadev Temple",
+        "Jharpada Road",
+        "Kantapada",
+        "PWD Dakabangala",
+        "Olatpur",
+        "SVNIRTAR Olatpur",
+        "Olatpur",
+        "Sisua",
+        "Ichhapur",
+        "Barahipur",
+        "Adaspur Bus Stand",
+        "Adaspur Hospital",
+        "Udayanath College",
+        "Salei",
+        "Kaliaghai Market",
+        "R. K. Institute",
+        "Apuja",
+        "Nuagaon",
+        "Niali College",
+        "Majikhanda Chaka",
+        "Bank Chaka Niali",
+        "Niali High School",
+        "Niali P.S",
+        "Fire Station Niali",
+        "Jalaharpur",
+        "Tolagopinatha Pur",
+        "Panimala",
+        "Madhab G.P",
+        "Madhabananda High School",
+        "Madhabananda Temple"
+      ]
+    },
+    "85": {
+      "route_number": "85",
+      "route_name": "CNBT ↔ Gadama",
+      "start": "CNBT",
+      "end": "Gadama",
+      "distance_km": 32,
+      "via": "Link Road, OMP Square, Kandarpur",
+      "stops": [
+        "CNBT",
+        "Khannagar Traffic",
+        "Badambadi Square",
+        "Badambadi Bus Stand",
+        "Pala Mandap",
+        "Arundoya Market",
+        "Nishamani Talkies",
+        "Link Road",
+        "Samrat Cinema",
+        "OMP Square",
+        "Officer's Colony Cuttack",
+        "6th Batalion",
+        "Chauliaganj Durga Mandap",
+        "Madan Mohan Market",
+        "Nayabazar",
+        "Bidyadharpur",
+        "Ganesh Bazar Bidyadharpur",
+        "NRRI Main Gate",
+        "Keshab Dham Road",
+        "Gatiraut Patna",
+        "Matha Sahi Road",
+        "Biribati",
+        "Kshetrabasi ITI Fakirpada",
+        "Fakirpada",
+        "Keshpur",
+        "Kandarpur",
+        "Alarpur",
+        "Xavier College of Hotel Management",
+        "Kamarpada",
+        "Archhili",
+        "Ramkumarpur",
+        "Somepur",
+        "Talapada",
+        "Nanpur",
+        "Anantabalia Nursery",
+        "Gadama"
+      ]
+    },
+    "86": {
+      "route_number": "86",
+      "route_name": "Manu University, Cuttack ↔ Mahanadi Vihar",
+      "start": "Manu University Cuttack",
+      "end": "Mahanadi Vihar",
+      "distance_km": 18,
+      "via": "Chahata Ghata, Barabati Stadium, SCB Medical, OMP Square",
+      "stops": [
+        "Manu University Cuttack",
+        "Madhusudan Bridge Sqr",
+        "CDA Sector 10 Road",
+        "CDA Sector 8 Road",
+        "Nua Sahi Bidanasi",
+        "Masanigada Bidanasi",
+        "Baimundi Nagar",
+        "Chahata Ghata",
+        "Police Signal Traffic School",
+        "Srinivas Gada",
+        "Shifa Hospital",
+        "Deer Park",
+        "Baliyatra Ground",
+        "Barabati Stadium",
+        "Silver City Boat Club",
+        "Matamatha",
+        "Professors Colony",
+        "Bose College",
+        "Odisha State Maritime Museum",
+        "Taladanda Bridge",
+        "Jobra Anicut",
+        "Settlement Office",
+        "SCB Medical",
+        "Balaji Hospital",
+        "Clock Tower",
+        "Ravenshaw University",
+        "Cuttack Railway Station",
+        "OMP Square",
+        "Front Gate Rail. Stn.",
+        "Gandarpur",
+        "Shikharpur",
+        "Bank Sqr Mahanadi Vihar",
+        "Bata Managal Temple",
+        "Justice Chakk Mahandi Vihar",
+        "CDA Market Complex Mahanadi Vihar",
+        "Mahanadi Vihar"
+      ]
+    },
+    "87": {
+      "route_number": "87",
+      "route_name": "Police Out Post, Naraj ↔ Mahanadi Vihar",
+      "start": "Police Out Post Naraj",
+      "end": "Mahanadi Vihar",
+      "distance_km": 22,
+      "via": "NLU, CDA Sector-13, Markatnagar CDA 7, High Court, CNBT, Nayabazar",
+      "stops": [
+        "Police Out Post Naraj",
+        "NLU",
+        "CDA Sector-13",
+        "Netaji Subhash Chhak",
+        "CDA Sector-11",
+        "CDA Sector-10",
+        "Tonpe Road",
+        "ICAI Bhawan",
+        "CESU CDA 9 Road",
+        "IPSAR",
+        "CDA Government Hospital",
+        "Markatnagar CDA 7",
+        "CDA Sec-6 Road",
+        "ABIT",
+        "Judicial Academy",
+        "Sishu Bhawan Cuttack",
+        "High Court Road",
+        "Cuttack Sai Temple",
+        "Puri Ghat P.S.",
+        "City College Cuttack",
+        "Khannagar Traffic",
+        "CNBT",
+        "Badambadi Square",
+        "Badambadi Bus Stand",
+        "Pala Mandap",
+        "Arundoya Market",
+        "Nishamani Talkies",
+        "Link Road",
+        "Samrat Cinema",
+        "OMP Square",
+        "Officer's Colony Cuttack",
+        "6TH Batalion",
+        "Chauliaganj Durga Mandap",
+        "Madan Mohan Market",
+        "Nayabazar",
+        "BDO Office Cuttack Sadar",
+        "Chauliaganj Police Outpost",
+        "Mahanadi Vihar"
+      ]
+    },
+    "87E": {
+      "route_number": "87E",
+      "route_name": "Police Out Post, Naraj ↔ Mahanadi Vihar (Via Nuapada)",
+      "start": "Police Out Post, Naraj",
+      "end": "Mahanadi Vihar",
+      "distance_km": 24,
+      "via": "NLU, CDA, Nuapada, Nayabazar",
+      "stops": [
+        "Police Out Post, Naraj",
+        "NLU",
+        "CDA Sector-13",
+        "Netaji Subhash Chhak",
+        "Biju Patnaik Park, Cuttack",
+        "State Bank Square CDA",
+        "Justice Square",
+        "CDA 9 Market Square",
+        "Eye Hospital Square",
+        "Sati Choura Square",
+        "Dagarpada Road",
+        "Sishu Bhawan Cuttack",
+        "High Court Road",
+        "City College Cuttack",
+        "CNBT",
+        "Badambadi Square",
+        "Dolamundai Square",
+        "Nuapatana Road",
+        "Nayabazar",
+        "Madan Mohan Market",
+        "Chauliaganj Police Outpost",
+        "Mahanadi Vihar"
+      ]
+    },
+    "88": {
+      "route_number": "88",
+      "route_name": "NLU, Cuttack ↔ SCB (Settlement Office)",
+      "start": "NLU",
+      "end": "Settlement Office",
+      "distance_km": 15,
+      "via": "Chahata, Sati Choura, CNBT, Dolamundai, Bajrakabati, Chhatra Bazar",
+      "stops": [
+        "NLU",
+        "Mahanadi Campus (Ravenshaw University)",
+        "CDA Sector-13 Road1",
+        "CDA Sector-13 Road",
+        "Netaji Subhash Chhak",
+        "Biju Patnaik Park Cuttack",
+        "Madhusudan Bridge Sq.",
+        "CDA Sector 10 Road",
+        "CDA Sector 8 Road",
+        "Nua Sahi Bidanasi",
+        "Masanigada Bidanasi",
+        "Baimundi Nagar",
+        "Chahata Ghata",
+        "Chahata Nagar Lane 4",
+        "Bidanasi",
+        "Krushak Bazar",
+        "Sati Choura Square",
+        "Dagarpada Road",
+        "Judicial Academy",
+        "Sishu Bhawan",
+        "High Court Road",
+        "Cuttack Sai Temple",
+        "Puri Ghat Police Station",
+        "City College",
+        "Khannagar Traffic",
+        "CNBT",
+        "Badambadi Square",
+        "Dolamundai Square",
+        "Dwaraka Hotel",
+        "Bajrakabati",
+        "Professor Pada",
+        "Chhatra Bazar",
+        "Mal Godown",
+        "Pilgrim Rd",
+        "Ravenshaw University",
+        "Clock Tower",
+        "SCB",
+        "Settlement Office"
+      ]
+    },
+    "89": {
+      "route_number": "89",
+      "route_name": "Trisulia Bus Stand ↔ Jagadguru Krupalu University",
+      "start": "Trisulia Bus Stand",
+      "end": "Jagadguru Krupalu University",
+      "distance_km": 12,
+      "via": "Fakirpada, Sri Sri University, Omfed Dairy, Sai International School",
+      "stops": [
+        "Trisulia Bus Stand",
+        "Trisulia Square",
+        "Mundamuhan Square",
+        "Fakirpada",
+        "Presidency Resorts",
+        "Patapur",
+        "Padmalava Nagar",
+        "Hanuman Temple Sandhapur",
+        "Bidyadharpur",
+        "Sandhapur",
+        "Sandhapur HWC",
+        "Sri Sri University Gate No-1",
+        "Omfed Dairy",
+        "SS University Gate No-1",
+        "Netal",
+        "Odisha Adarsha Vidyalaya Arilo",
+        "Godi Sahi",
+        "Bharat Masala",
+        "Sai International School",
+        "3BN NDRF",
+        "Govindpur Chaka",
+        "Nigam Institute",
+        "Ramachandi Bazar",
+        "Jagadguru Krupalu University"
+      ]
+    },
+    "90": {
+      "route_number": "90",
+      "route_name": "Khordha New Bus Stand ↔ Jagatpur",
+      "start": "Khordha New Bus Stand",
+      "end": "Jagatpur",
+      "distance_km": 48,
+      "via": "BSABT, Rasulgarh, NH",
+      "stops": [
+        "Khordha New Bus Stand",
+        "Pallahata Square",
+        "Old Collector Office",
+        "DRDA",
+        "Gada Khordha",
+        "Barunei Pitha",
+        "UPHC",
+        "PN College",
+        "Khordha Bypass Square",
+        "Pitapalli Petrol Pump",
+        "Pitapalli Square",
+        "Jupiter College",
+        "Gangapada",
+        "Jatani Gate",
+        "Khajasuni Temple",
+        "Ogalapada",
+        "Janla Medical",
+        "Janla Post Office",
+        "Retang Road Square",
+        "Gohiria Square",
+        "Aditya Hyundai Tamando",
+        "Bijipur",
+        "Tamando",
+        "Kalinga Vihar Square",
+        "K9",
+        "Patrapada",
+        "Alu Godam",
+        "Aiginia",
+        "Kolathia",
+        "Khandagiri Square",
+        "Baramunda BSABT",
+        "Rajdhani College",
+        "Fire Station Square",
+        "CRPF Square",
+        "ISKCON Temple",
+        "Nabard",
+        "Jaydev Vihar Flyover",
+        "IMMT",
+        "Acharya Vihar Square",
+        "Vani Vihar Square",
+        "Satsangha Vihar",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Saptasati Temple",
+        "Hi-Tech Hospital Square",
+        "Hanspal Square",
+        "Puri Canal Road",
+        "Highway Honda",
+        "Vishnu Vihar",
+        "Utkal Heights",
+        "Millenium City",
+        "Pahal",
+        "Apex College",
+        "Nakhara Square",
+        "Bamphakuda",
+        "Telenga Pentha",
+        "Delta Gada",
+        "Pratap Nagari",
+        "Jyotsna Vihar",
+        "Bhanpur",
+        "Balikuda",
+        "Gopalpur Railway Station",
+        "Khapuria Square",
+        "Link Road",
+        "OMP Square",
+        "Gandarpur",
+        "Shikharpur",
+        "Jagatpur"
+      ]
+    },
+    "91": {
+      "route_number": "91",
+      "route_name": "Baramunda BSABT ↔ Biju Patnaik Park, CDA",
+      "start": "Baramunda BSABT",
+      "end": "Biju Patnaik Park CDA",
+      "distance_km": 32,
+      "via": "Vani Vihar, Rasulgarh SQ, Nakhara, CNBT, Sati Choura",
+      "stops": [
+        "Baramunda BSABT",
+        "Rajdhani College",
+        "Fire Station Square",
+        "Gopabandhu Nagar",
+        "CRPF Square",
+        "Nayapalli",
+        "ISKCON Temple",
+        "Nabard",
+        "Jaydev Vihar Flyover",
+        "IMMT",
+        "Acharya Vihar Square",
+        "Vani Vihar",
+        "Vani Vihar Square",
+        "Satsangha Vihar",
+        "Rasulgarh Square",
+        "Palasuni",
+        "Saptasati Temple",
+        "Hi-Tech Hospital Square",
+        "Hanspal Square",
+        "Puri Canal Road",
+        "Highway Honda",
+        "Vishnu Vihar",
+        "Utkal Heights",
+        "Millenium City",
+        "Pahal",
+        "Apex College",
+        "Sum Hospital Campus 2",
+        "Nakhara Square",
+        "Bamphakuda",
+        "Telenga Pentha",
+        "Delta Gada",
+        "Pratap Nagari",
+        "Jyotsna Vihar",
+        "Bhanpur",
+        "Balikuda",
+        "Gopalpur Railway Station",
+        "Khapuria Square",
+        "Link Road",
+        "Nishamani Talkies",
+        "Arundoya Market",
+        "Pala Mandap",
+        "Badambadi Bus Stand",
+        "Badambadi Square",
+        "CNBT",
+        "City College",
+        "Puri Ghat Police Station",
+        "Cuttack Sai Temple",
+        "High Court Road",
+        "Sishu Bhawan",
+        "Judicial Academy",
+        "Dagarpada Road",
+        "Sati Choura Square",
+        "Eye Hospital Square",
+        "Windsor Place",
+        "Markatnagar CDA 7",
+        "CDA Government Hospital",
+        "IPSAR",
+        "CESU CDA 9 Road",
+        "Raj Kishor Marg",
+        "Saraswati Shisu Mandir",
+        "Justice Square",
+        "State Bank Square",
+        "Biju Patnaik Park CDA"
+      ]
+    },
+    "92": {
+      "route_number": "92",
+      "route_name": "Sai Mandir ↔ Baramunda BSABT (Temple Circuit)",
+      "start": "Sai Mandir",
+      "end": "Baramunda BSABT",
+      "route_type": "Circular/Tourist",
+      "distance_km": 18,
+      "via": "Temple Circuit Route",
+      "stops": [
+        "Sai Mandir",
+        "Megheswar Temple",
+        "Brahmeswar Temple",
+        "Brahmeswarpatna",
+        "Ratnakar Bagh",
+        "Chili Pokhari",
+        "Raja Rani Temple",
+        "Kedar Gouri Temple",
+        "Ravi Talkies",
+        "Shree Hospital",
+        "NCC Canteen",
+        "BJB College",
+        "State Museum",
+        "Kalpana Square",
+        "Raj Mahal Square",
+        "Unit 1 Haat",
+        "AG Square",
+        "Capital Hospital",
+        "New Airport Square",
+        "Old Airport Square",
+        "Naveen Nivas",
+        "Palaspalli",
+        "Poonama Flyover",
+        "Bhimatangi",
+        "Ekamra College",
+        "Lingaraj Station",
+        "Sundarpada Hata",
+        "Pokhariput",
+        "Housing Board Colony",
+        "Madhusudan Park",
+        "Kala Bhoomi",
+        "Gandamunda",
+        "ITER College",
+        "Jagamara",
+        "Jagannath Temple",
+        "Khandagiri Square",
+        "Khandagiri Bypass",
+        "Baramunda BSABT"
+      ]
+    },
+    "93": {
+      "route_number": "93",
+      "route_name": "Biju Patnaik Park, Cuttack ↔ Bhubaneswar Railway Station",
+      "start": "Biju Patnaik Park Cuttack",
+      "end": "Bhubaneswar Railway Station",
+      "distance_km": 35,
+      "via": "Chandaka College, Chandaka, Nalanda Institute of Technology",
+      "stops": [
+        "Biju Patnaik Park Cuttack",
+        "State Bank Square CDA",
+        "Justice Square",
+        "Saraswati Shisu Mandir",
+        "Raj Kishor Marg",
+        "CDA 9 Market Square",
+        "CDA 6 Park",
+        "Eye Hospital Square",
+        "Sati Choura Square",
+        "Dagarpada Road",
+        "Judicial Academy",
+        "Kunheipara",
+        "Trisulia Square",
+        "Madhuban",
+        "Bachhipur",
+        "Barang Police Station",
+        "Barang Square",
+        "Barang Sitaram Bazar",
+        "Jungle View",
+        "Orissa Diesel",
+        "Bhalunka Road",
+        "Jujhagada",
+        "Daruthenga School",
+        "Daruthenga",
+        "Shyamsundarpur",
+        "SOG",
+        "Chandaka College",
+        "Chandaka",
+        "Chandaka Market",
+        "Nalanda Institute of Technology",
+        "Kujimahal Square",
+        "Dalua Square",
+        "Bhola Square-ASBM",
+        "Godibari Village",
+        "Godibari Nature Camp",
+        "Sparsh Hospital",
+        "Kantabada Bazar",
+        "Kateni",
+        "Kantabada",
+        "IIIT Square",
+        "Gothapatna Square",
+        "RI Paikarapur",
+        "Malipada",
+        "Nuagan Square",
+        "Sum Hospital",
+        "Shyampur",
+        "Ayurveda College",
+        "Kalinga Studio Square",
+        "Agriculture Directorate",
+        "Jagannath Vihar",
+        "Rental Colony",
+        "CRPF KV",
+        "Fire Station Square",
+        "Vivekanand Hospital",
+        "Delta Square",
+        "Satabdi Nagar",
+        "City Womens College",
+        "OUAT Square",
+        "Siripur Market",
+        "Gopabandhu Square",
+        "Surya Nagar",
+        "Governor House Square",
+        "Bhubaneswar Club",
+        "AG Square",
+        "Unit 1 Haat",
+        "Raj Mahal Square",
+        "Ashok Nagar",
+        "Master Canteen",
+        "Bhubaneswar Railway Station"
+      ]
+    }
+  }
+}

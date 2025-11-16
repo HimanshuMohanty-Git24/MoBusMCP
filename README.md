@@ -1,0 +1,1 @@
+to run this python -m src.server

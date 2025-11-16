@@ -1,0 +1,11 @@
+{
+	"inputs": [
+		{
+			"id": "context7_api_key",
+			"type": "promptString",
+			"description": "Context7 API key (optional; increases rate limits). Get one at https://context7.com/dashboard",
+			"password": true
+		}
+	],
+	"servers": {}
+}
